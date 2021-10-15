@@ -3,6 +3,7 @@ import Head from "next/head";
 import type { AppProps } from "next/app";
 import { GlobalStyle } from "@atomic/obj.globals/global.style";
 import { Header } from "@atomic/org.header";
+import { Footer } from "@atomic/org.footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
