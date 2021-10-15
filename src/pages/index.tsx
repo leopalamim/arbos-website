@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Hero } from 'app/modules/home/hero/hero.component'
+import { BenefitsSection } from '@app/modules/home/benefits/benefits.section'
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <BenefitsSection />
     </div>
   )
 }
