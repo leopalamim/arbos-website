@@ -16,6 +16,6 @@ export const ImageObj = {
   NoChemicalIcon: () => <Image src={noChemicalIcon} alt={'Sem químicos'} width={'50px'} height={'50px'} />,
   WorldIcon: () => <Image src={worldIcon} alt={'Planeta'} width={'50px'} height={'50px'} />,
   Leaf: () => <Image src={leaf} alt={'Folha'} width={'106px'} height={'150px'} />,
-  Lettuce: () => <Image src={lettuce} alt={'Alface'} width={'100px'} height={'100px'} />,
+  Lettuce: () => <Image src={lettuce} alt={'Alface'} width={'300px'} height={'300px'} />,
   LogoArbos: () => <Image src={logoArbos} alt={'Logo da Arbos'} width={'70px'} height={'70px'} />,
 }

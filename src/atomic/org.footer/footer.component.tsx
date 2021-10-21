@@ -8,6 +8,7 @@ import { Grid } from "atomic/obj.grid/grid";
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 import { ExternalLinks } from "app/modules/app/external-links";
 import { Routes } from "@app/modules/app/routes";
+import { Button } from "@atomic/atm.button";
 
 export const Footer: React.FC = () => {
   return (
@@ -19,9 +20,9 @@ export const Footer: React.FC = () => {
           </Col>
           <Col xs={12} sm={12} md={3}>
             <H3>Institucional</H3>
-            <LinkStyled href={Routes.Faq}>
-              <BodySecondary as={"a"}>Perguntas frequentes</BodySecondary>
-            </LinkStyled>
+            <Button variant={'link'} href={Routes.Faq}>
+              Perguntas frequentes
+            </Button>
           </Col>
           <Col xs={12} sm={12} md={5}>
             <H3>Fale conosco</H3>

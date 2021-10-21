@@ -136,19 +136,7 @@ export const BodySecondary = styled.p`
 export const ErrorMessage = styled(BodySecondary)`
   color: ${Color.Alert};
 `
-export const BodyLink = styled.p`
-  font-family: ${FontFamily.Secondary};
-  font-size: ${FontSize.Small};
-  font-weight: ${FontWeight.Regular};
-  color: ${Color.Primary};
-  margin: ${Spacing.Medium} ${Spacing.Small} ${Spacing.Small} ${Spacing.Small};
-  cursor: pointer;
-  transition: 0.5s;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-`
 export const Label = styled.label`
   font-family: ${FontFamily.Secondary};
   font-size: ${FontSize.XSmall};

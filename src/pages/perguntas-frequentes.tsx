@@ -6,8 +6,8 @@ const FaqPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Perguntas frequentes - Poli Angels</title>
-        <meta name={'description'} content={'Perguntas frequentes realizadas para a Poli Angels.'}></meta>
+        <title>Perguntas frequentes - Arbos</title>
+        <meta name={'description'} content={'Perguntas frequentes realizadas para a Arbos.'}></meta>
       </Head>
       <PageHeading title={'Perguntas frequentes'} />
       <FaqSection />

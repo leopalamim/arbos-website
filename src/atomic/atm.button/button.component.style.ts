@@ -52,7 +52,7 @@ export const ButtonWrapperStyled = styled.button<ButtonWrapperStyledProps>`
   font-family: ${FontFamily.Primary};
   cursor: pointer;
   display: inline-block;
-  padding: ${Spacing.Small};
+  padding: ${Spacing.Small} ${Spacing.Large};
   text-decoration: none;
   text-align: center;
 
@@ -92,7 +92,6 @@ export const ButtonWrapperStyled = styled.button<ButtonWrapperStyledProps>`
     props.kind === 'link' &&
     `
     font-weight: ${FontWeight.Regular};
-    font-size: ${FontSize.XSmall};
     `}
 `
 
