@@ -9,7 +9,6 @@ import {
   FontWeight,
   LineHeight,
   Spacing,
-  Breakpoint,
   Transition
 } from 'atomic/obj.constants/constants'
 
@@ -43,57 +42,15 @@ export const TitleLink = styled.a`
   }
 `
 
-interface H1Props {
-  box?: boolean
-}
 export const H1 = styled.h1`
   position: relative;
-  display: inline-block;
+  right: 30px;
   z-index: 1;
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.XLarge};
   line-height: ${LineHeight.Large};
   font-weight: ${FontWeight.Bold};
   color: ${Color.Black};
-  margin-bottom: ${Spacing.Large};
-
-  ${(props: H1Props) => {
-    if (props.box) {
-      return `
-          &:before {
-            top: -48px;
-            left: -${Spacing.Large};
-            z-index: -1;
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: ${Color.Primary};
-            content: " ";
-
-            @media (max-width: ${Breakpoint.Desktop}){
-              top: -42px;
-              height: 80px;
-            }
-          }
-        `
-    }
-  }}
-`
-
-export const H1Sub = styled.p`
-  color: ${Color.GrayDark};
-  font-size: ${FontSize.Medium};
-  font-family: ${FontFamily.Primary};
-  font-weight: ${FontWeight.Regular};
-  margin-bottom: ${Spacing.Medium};
-  font-style: 'normal';
-  ${H1} + & {
-    margin-top: -${Spacing.Medium};
-  }
-
-  & span {
-    color: ${Color.Primary};
-  }
 `
 
 export const H2 = styled.h2`

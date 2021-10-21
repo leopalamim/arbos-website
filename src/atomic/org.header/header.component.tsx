@@ -37,12 +37,6 @@ export const Header: React.FC = () => {
           <Hbox.Separator />
           <Hbox.Item noGrow={true} vAlign={'center'}>
             <Button kind={'link'}>
-              O Hub
-            </Button>
-          </Hbox.Item>
-          <Hbox.Separator />
-          <Hbox.Item noGrow={true} vAlign={'center'}>
-            <Button kind={'link'}>
               Contato
             </Button>
           </Hbox.Item>
