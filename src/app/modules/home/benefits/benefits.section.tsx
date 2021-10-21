@@ -77,7 +77,6 @@ export const BenefitsSection: React.FC = () => {
             </Fade>
           </Col>
         </Row>
-        <Separator type={"section"} />
       </Grid>
     </>
   );

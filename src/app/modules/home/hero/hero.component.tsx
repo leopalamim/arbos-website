@@ -3,6 +3,7 @@ import { HeroGridStyled, HeroStyled, StrongWordBoxStyled } from "app/modules/hom
 import { Separator } from "@atomic/atm.separator";
 import { Button } from "@atomic/atm.button";
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
+import { Link } from "react-scroll";
 
 export const Hero: React.FC = () => (
   <>
@@ -19,7 +20,9 @@ export const Hero: React.FC = () => (
               condomínio
             </Body>
             <Separator type={"subsection"} />
-            <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+            <Link to={'requestHubSection'} smooth>
+              <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+            </Link>
           </Col>
         </Row>
       </HeroGridStyled>

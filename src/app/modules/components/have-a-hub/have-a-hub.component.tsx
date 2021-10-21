@@ -3,6 +3,7 @@ import { Separator } from '@atomic/atm.separator'
 import { Body, Enhance, H2 } from '@atomic/atm.typography'
 import React from 'react'
 import { Fade } from 'react-reveal'
+import { Link } from "react-scroll";
 
 export const HaveAHubComponent: React.FC = () => {
   return (
@@ -12,9 +13,11 @@ export const HaveAHubComponent: React.FC = () => {
         Colha seu próprio vegetal do quintal de casa com um Hub da Arbos.
       </Body>
       <Separator type={'subsection'} />
-      <Button kind={'callToAction'}>
-        Quero no meu condomínio
-      </Button>
+      <Link to={'requestHubSection'} smooth>
+        <Button kind={'callToAction'}>
+          Quero no meu condomínio
+        </Button>
+      </Link>
     </Fade>
   )
 }

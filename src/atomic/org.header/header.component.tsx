@@ -4,25 +4,17 @@ import { HeaderMenu, HeaderMenuWrapper } from "atomic/org.header/header.componen
 import { Hbox } from "@atomic/obj.hbox/hbox.component";
 import { useRouter } from "next/router";
 import { Button } from "@atomic/atm.button";
-import { useRef } from "react";
-import { useState } from "react";
 import { Routes } from "@app/modules/app/routes";
+import { Link } from "react-scroll";
 
 export const Header: React.FC = () => {
-  const [menuHeight, setMenuHeight] = useState();
   const router = useRouter();
   const handleRoute = (route: string) => {
     router.push(route);
   };
 
-  const reference = useRef(null);
-
-  const handleMenuHeight = () => {
-    setMenuHeight(reference.current.scrollHeight);
-  };
-
   return (
-    <HeaderMenuWrapper ref={reference} onMouseOver={handleMenuHeight}>
+    <HeaderMenuWrapper>
       <HeaderMenu>
         <Hbox>
           <Hbox.Separator />
@@ -36,7 +28,9 @@ export const Header: React.FC = () => {
             </Button>
           </Hbox.Item>
           <Hbox.Item vAlign={"center"} hAlign={"flex-end"}>
-            <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+            <Link to={'requestHubSection'} smooth>
+              <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+            </Link>
           </Hbox.Item>
         </Hbox>
       </HeaderMenu>

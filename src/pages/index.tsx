@@ -14,7 +14,9 @@ const Home: NextPage = () => {
       </Head>
       <Hero />
       <BenefitsSection />
-      <RequestHubSection />
+      <div id={'requestHubSection'}>
+        <RequestHubSection />
+      </div>
     </div>
   )
 }
