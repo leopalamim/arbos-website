@@ -6,6 +6,7 @@ export const AccordionItemButtonStyled = styled(AccordionItemButton)`
   transition: transform 0.3s;
   &: hover {
     transform: scale(1.01);
+    cursor: pointer;
   }
 `
 

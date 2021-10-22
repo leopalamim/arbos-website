@@ -19,6 +19,7 @@ export const RequestHubSection: React.FC = () => (
         <CardFrame paddingType={"large"}>
           <RequestHubForm />
         </CardFrame>
+        <Separator type={'subsection'} />
       </Col>
       <Col xs={12} lg={6}>
         <Hbox>

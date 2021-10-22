@@ -14,7 +14,7 @@ export const Hero: React.FC = () => (
           <StrongWordBoxStyled>dentro do seu condomínio</StrongWordBoxStyled>
         </DisplayStyled>
         <Row>
-          <Col xs={6}>
+          <Col xs={12} lg={6}>
             <Body>
               Com a horta da Arbos, você pode descer uns lances de escada e colher vegetais hidropônicos dentro do seu
               condomínio
