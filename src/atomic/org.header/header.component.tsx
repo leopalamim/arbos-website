@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
           </Hbox.Item>
           <Hbox.Item vAlign={"center"} hAlign={"flex-end"}>
             <Link to={'requestHubSection'} smooth>
-              <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+              <Button kind={"callToAction"} href={Routes.Home}>Quero no meu condomínio</Button>
             </Link>
           </Hbox.Item>
         </Hbox>
