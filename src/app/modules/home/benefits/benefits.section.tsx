@@ -1,14 +1,14 @@
 import React from "react";
 import { Grid } from "atomic/obj.grid/grid";
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
-import { Fade } from "react-reveal";
-
 import { Hbox } from "atomic/obj.hbox/hbox.component";
 import { ImageObj } from "atomic/atm.image";
 import { Separator } from "@atomic/atm.separator/separator.style";
-import { Body, H3 } from "atomic/atm.typography";
+import { Body, H2, H3 } from "atomic/atm.typography";
 import { HaveAHubComponent } from "@app/modules/components/have-a-hub/have-a-hub.component";
 import { CardFrame } from "@atomic/mol.card";
+import { Link } from 'react-scroll'
+import { Button } from "@atomic/atm.button";
 
 export const BenefitsSection: React.FC = () => {
   return (
@@ -16,7 +16,14 @@ export const BenefitsSection: React.FC = () => {
       <Grid>
         <Row between={"xs"} middle={"sm"} around={"xs"}>
           <Col xs={12} md={12} lg={4}>
-            <HaveAHubComponent />
+            <H2>
+              O que você vai ter no quintal de casa
+            </H2>
+            <Body>Você pode ter uma horta no quintal de casa, onde vai poder colher vegetais frescos, sem agrotóxicos e a qualquer hora, além de ajudar o planeta.</Body>
+            <Separator type={"subsection"} />
+            <Link to={"requestHubSection"} smooth>
+              <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+            </Link>
             <Separator type={"subsection"} />
           </Col>
           <Col xs={12} md={12} lg={8}>

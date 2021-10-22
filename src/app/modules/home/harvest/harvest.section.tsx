@@ -17,13 +17,12 @@ export const HarvestSection = () => {
           </Hbox>
         </Col>
         <Col xs={12} lg={6}>
-          <H2>A hidroponia</H2>
+          <H2>Como nós plantamos</H2>
           <Body>Nós plantamos nossos vegetais por hidroponia, uma técnica de plantio sem solo. Em nossas fazendas, controlamos tudo, desde a temperatura até os nutrientes que os vegetais recebem, o que os deixa saborosos.</Body>
           <Separator type={'line'} />
           <Body>Nossos vegetais mantém o frescor e o sabor por muito mais tempo, com a raiz submersa em 2cm de água.</Body>
         </Col>
       </Row>
-      <Separator type={'section'} />
     </Grid>
   )
 }

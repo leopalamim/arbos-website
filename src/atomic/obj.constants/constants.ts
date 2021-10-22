@@ -94,9 +94,6 @@ export enum Radius {
 export const Shadow =
   '0px 8px 24px rgba(0, 0, 0, 0.24), 0px 4px 8px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.08);'
 
-export const SoftShadow =
-  '0px 2px 8px rgba(0, 0, 0, 0.24), 0px 1px 2px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.04)'
-
 export enum Spacing {
   XSmall = '4px',
   Small = '12px',
