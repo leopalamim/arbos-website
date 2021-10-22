@@ -1,5 +1,5 @@
 export enum BrandColor {
-  Green = '#91B247',
+  Green = '#A1C4AA',
   DarkGreen = '#0C2808',
   Purple = '#C03361'
 }
