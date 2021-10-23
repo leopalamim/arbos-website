@@ -23,7 +23,7 @@ export const HeroGridStyled = styled(Grid)`
 `
 
 export const StrongWordBoxStyled = styled.div`
-  color: ${Color.Primary};
+  color: ${Color.Secondary};
   min-height: 6rem;
   width: 100%;
 `
