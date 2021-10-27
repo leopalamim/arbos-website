@@ -25,7 +25,7 @@ export const PageHeading: React.FC<SectionTitleProps> = (props) => {
               <H1>{props.title}</H1>
             </Hbox.Item>
           </Hbox>
-          <Separator type={'section'} />
+          <Separator type={'subsection'} />
         </Col>
       </Row>
     </Grid>

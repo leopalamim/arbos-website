@@ -17,9 +17,9 @@ export const CardFrameWrapperStyled = styled.div`
 `
 
 export const CardFrameStyled = styled.div`
+  border: solid ${Color.Secondary} 1px;
   background-color: ${Color.White};
-  box-shadow: ${Shadow};
-  transition: box-shadow 0.3s;
+  box-shadow: ${Color.Secondary} 4px 4px 0px 1px;
   border-radius: ${(props: CardFrameStyledProps) => (props.noBorder ? '0' : Radius.Small)};
 
   ${(props: CardFrameStyledProps) =>

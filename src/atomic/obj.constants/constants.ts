@@ -1,15 +1,16 @@
 export enum BrandColor {
   Green = '#578959',
   LightGreen = '#A1C4AA',
-  Purple = '#DC143C'
+  DarkGreen = '#1F301E',
+  Red = '#DC143C'
 }
 
 export class Color {
   public static readonly Primary = BrandColor.Green
   public static readonly Secondary = BrandColor.LightGreen
-  public static readonly CallToAction = BrandColor.Purple
+  public static readonly CallToAction = BrandColor.Red
 
-  public static readonly Black = '#0C2634'
+  public static readonly Black = '#052117'
   public static readonly White = '#FFFFFF'
   public static readonly Transparent = 'transparent'
   public static readonly Accessory = '#ED991A'
