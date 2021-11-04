@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { Color } from 'atomic/obj.constants/constants'
+import { Color, Breakpoint } from 'atomic/obj.constants/constants'
 import { Grid } from 'atomic/obj.grid/grid'
 import heroImage from 'assets/img/img-hero.png'
+import heroImageMobile from 'assets/img/img-hero-mobile.jpg'
 import { Body } from 'atomic/atm.typography/typography'
 
 export const HeroStyled = styled.div`
@@ -11,6 +12,11 @@ export const HeroStyled = styled.div`
   background-size: cover;
   & ${Body} {
     color: ${Color.White};
+  }
+
+  @media (max-width: ${Breakpoint.Mobile}) {
+    background: ${Color.White} url(${heroImageMobile}) center center no-repeat;
+    background-size: cover;
   }
 `
 

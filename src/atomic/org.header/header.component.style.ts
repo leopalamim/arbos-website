@@ -23,8 +23,10 @@ export const HeaderMenuWrapper = styled.div`
   box-shadow: ${Shadow};
   height: 70px;
   overflow: hidden;
+`
 
-  @media (max-width: ${Breakpoint.Desktop}) {
+export const HeaderMenuDesktopWrapper = styled.div`
+  @media (max-width: ${Breakpoint.Tablet}) {
     display: none;
   }
 `
