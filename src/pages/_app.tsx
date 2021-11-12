@@ -11,6 +11,8 @@ import { GlobalsWrapper } from "@app/modules/components/globals-wrapper.componen
 import { GlobalStore } from "@app/core/global-store.service";
 import { useHideOverflowStore } from "@app/providers/hide.overflow.store";
 import { useFlashStore } from "app/providers/flash.message.store";
+import { ApolloProvider } from "@apollo/client";
+import { client } from "app/core/graphql/apollo-client";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [logged, setLogged] = useState<boolean>();
@@ -33,13 +35,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <GlobalStore stores={[useFlashStore, useHideOverflowStore]}>
-        <GlobalsWrapper>
-          <Header />
-          <Component {...pageProps} />
-          <Footer />
-        </GlobalsWrapper>
-      </GlobalStore>
+      <ApolloProvider client={client}>
+        <GlobalStore stores={[useFlashStore, useHideOverflowStore]}>
+          <GlobalsWrapper>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+          </GlobalsWrapper>
+        </GlobalStore>
+      </ApolloProvider>
     </AppWrapper>
   );
 }
