@@ -1,13 +1,30 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import { GlobalStyle } from "@atomic/obj.globals/global.style";
 import { Header } from "@atomic/org.header";
 import { Footer } from "@atomic/org.footer";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { parseCookies } from "nookies";
+import { AppWrapper } from "@app/modules/app/app.component.style";
+import { GlobalsWrapper } from "@app/modules/components/globals-wrapper.component";
+import { GlobalStore } from "@app/core/global-store.service";
+import { useHideOverflowStore } from "@app/providers/hide.overflow.store";
+import { useFlashStore } from "app/providers/flash.message.store";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [logged, setLogged] = useState<boolean>();
+
+  const router = useRouter();
+  const isLogged = parseCookies()?.jwt ? true : false;
+
+  useEffect(() => {
+    if (isLogged) {
+      setLogged(isLogged);
+    }
+  }, [isLogged]);
   return (
-    <>
+    <AppWrapper>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,11 +33,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <GlobalStyle />
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </>
+      <GlobalStore stores={[useFlashStore, useHideOverflowStore]}>
+        <GlobalsWrapper>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </GlobalsWrapper>
+      </GlobalStore>
+    </AppWrapper>
   );
 }
 export default MyApp;
