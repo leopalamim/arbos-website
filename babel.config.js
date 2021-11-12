@@ -1,4 +1,4 @@
 module.exports = {
-  presets: ['next/babel'],
-  plugins: [['styled-components', { ssr: true }], 'module-resolver']
-}
+  presets: ["next/babel"],
+  plugins: [["styled-components", { ssr: true }], "import-graphql", "module-resolver"],
+};

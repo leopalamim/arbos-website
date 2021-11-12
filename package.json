@@ -17,6 +17,7 @@
     "@fortawesome/react-fontawesome": "0.1.15",
     "apollo": "2.33.4",
     "apollo-upload-client": "15.0.0",
+    "babel-plugin-import-graphql": "2.8.1",
     "babel-plugin-module-resolver": "4.1.0",
     "color": "4.0.1",
     "graphql": "15.5.0",
