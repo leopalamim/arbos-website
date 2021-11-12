@@ -3,7 +3,7 @@ import { RoleName } from '@app/data/graphql/types/schema'
 import { handleCookies } from '@app/utils/handle-cookies'
 import { parseCookies } from 'nookies'
 import { AuthContext } from './auth.context'
-import { useFlashMessage } from '@app/modules/components'
+import { useFlashMessage } from '@app/modules/components/flash-message.hook'
 import router from 'next/router'
 import { Routes } from '@app/modules/app/routes'
 import { useMutation } from '@app/core/graphql/graphql-mutation.hook'
@@ -63,7 +63,6 @@ export const AuthProvider: React.FC = ({ children }) => {
       id: parseCookies()?.id,
       isAdmin: parseCookies()?.role === RoleName.Admin,
       isLogged: !!parseCookies()?.jwt,
-      isCurator: !!userDetails?.user?.admin_pages_curator?.length,
       loading,
       login,
       logout

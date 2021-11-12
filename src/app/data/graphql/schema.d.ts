@@ -39,6 +39,43 @@ export interface CreateRequestMutationVariables {
 
 
 // ====================================================
+// GraphQL mutation operation: LoginMutation
+// ====================================================
+
+
+export interface LoginMutation_login_user_role {
+  __typename: "UsersPermissionsMeRole";
+  name: string;
+}
+
+export interface LoginMutation_login_user {
+  __typename: "UsersPermissionsMe";
+  id: string;
+  username: string;
+  role: LoginMutation_login_user_role | null;
+}
+
+export interface LoginMutation_login {
+  __typename: "UsersPermissionsLoginPayload";
+  jwt: string | null;
+  user: LoginMutation_login_user;
+}
+
+export interface LoginMutation {
+  login: LoginMutation_login;
+}
+
+export interface LoginMutationVariables {
+  input: UsersPermissionsLoginInput;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+
+// ====================================================
 // GraphQL query operation: RequestsQuery
 // ====================================================
 
@@ -56,6 +93,37 @@ export interface RequestsQuery_requests {
 
 export interface RequestsQuery {
   requests: (RequestsQuery_requests | null)[] | null;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+
+// ====================================================
+// GraphQL query operation: UserQuery
+// ====================================================
+
+
+export interface UserQuery_user_role {
+  __typename: "UsersPermissionsRole";
+  name: string;
+}
+
+export interface UserQuery_user {
+  __typename: "UsersPermissionsUser";
+  username: string;
+  email: string;
+  role: UserQuery_user_role | null;
+}
+
+export interface UserQuery {
+  user: UserQuery_user | null;
+}
+
+export interface UserQueryVariables {
+  id: string;
 }
 
 /* tslint:disable */
@@ -84,6 +152,12 @@ export interface RequestInput {
   published_at?: any | null;
   created_by?: string | null;
   updated_by?: string | null;
+}
+
+export interface UsersPermissionsLoginInput {
+  identifier: string;
+  password: string;
+  provider?: string | null;
 }
 
 export interface createRequestInput {

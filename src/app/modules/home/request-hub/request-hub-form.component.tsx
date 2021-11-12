@@ -1,9 +1,7 @@
 import { Form, FormField, FormSelect } from "atomic/obj.form";
 import { Button } from "atomic/atm.button/button.component";
 import { useForm } from "react-hook-form";
-import { useRequest } from "@app/core/graphql/request.hook";
-import { useMutation } from "@apollo/client";
-import { CreateRequestMutation } from "@app/data/graphql/mutations/create-request.mutation";
+import { useMutation } from "@app/core/graphql/graphql-mutation.hook";
 import { Label } from "@atomic/atm.typography";
 import { Separator } from "@atomic/atm.separator";
 
@@ -11,7 +9,7 @@ export const RequestHubForm = () => {
   const { register, errors, handleSubmit } = useForm();
 
   const [request, { loading }] = useMutation('CreateRequestMutation', {
-    onSuccess: () => location.reload(),
+    onCompleted: () => location.reload(),
     onError: () => alert("Não foi possível enviar a solicitação. Por favor, tente novamente."),
   });
 
