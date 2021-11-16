@@ -6,7 +6,6 @@ import { Footer } from "@atomic/org.footer";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { parseCookies } from "nookies";
-import { AppWrapper } from "@app/modules/app/app.component.style";
 import { GlobalsWrapper } from "@app/modules/components/globals-wrapper.component";
 import { GlobalStore } from "@app/core/global-store.service";
 import { useHideOverflowStore } from "@app/providers/hide.overflow.store";
@@ -26,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [isLogged]);
   return (
-    <AppWrapper>
+    <>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -44,7 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </GlobalsWrapper>
         </GlobalStore>
       </ApolloProvider>
-    </AppWrapper>
+    </>
   );
 }
 export default MyApp;
