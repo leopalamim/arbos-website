@@ -5,7 +5,6 @@ import { Hbox } from "atomic/obj.hbox/hbox.component";
 import { ImageObj } from "atomic/atm.image";
 import { Separator } from "@atomic/atm.separator/separator.style";
 import { Body, H2, H3 } from "atomic/atm.typography";
-import { HaveAHubComponent } from "@app/modules/components/have-a-hub/have-a-hub.component";
 import { CardFrame } from "@atomic/mol.card";
 import { Link } from 'react-scroll'
 import { Button } from "@atomic/atm.button";

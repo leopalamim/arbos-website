@@ -1,6 +1,7 @@
+import { DashboardSection } from '@app/modules/private-area/dashboard/dashboard.section'
+import { Separator } from '@atomic/atm.separator'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { PageHeading } from '@atomic/org.page-heading'
 
 const AdminPage: NextPage = () => {
   return (
@@ -8,7 +9,8 @@ const AdminPage: NextPage = () => {
       <Head>
         <title>Admin - Arbos</title>
       </Head>
-      <PageHeading title={'Admin'} />
+      <Separator type={'subsection'} />
+      <DashboardSection />
     </div>
   )
 }

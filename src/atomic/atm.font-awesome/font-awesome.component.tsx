@@ -15,6 +15,7 @@ import {
   faInfoCircle,
   faLeaf,
   faPlus,
+  faPuzzlePiece,
   faSignInAlt,
   faSortDown,
   faTimes,
@@ -22,6 +23,7 @@ import {
   faToolbox,
   faUser,
   faQuestionCircle,
+  faStar,
   faTrash,
   faMinus
 } from '@fortawesome/free-solid-svg-icons'
@@ -58,8 +60,10 @@ export const FaIcon: Record<string, (props: FontAwesomeProps) => JSX.Element> = 
   OutlinedCircle: (props) => (
     <FontAwesomeStyled {...props} icon={OutlinedCircle} size={FaIconSize.medium} color={'primary'} />
   ),
+  PuzzlePiece: (props) => <FontAwesomeStyled {...props} icon={faPuzzlePiece} />,
   Question: (props) => <FontAwesomeStyled {...props} icon={faQuestionCircle} />,
   SortDown: (props) => <FontAwesomeStyled {...props} icon={faSortDown} />,
+  Star: (props) => <FontAwesomeStyled {...props} icon={faStar} />,
   Toolbox: (props) => <FontAwesomeStyled {...props} icon={faToolbox} />,
   Trash: (props) => <FontAwesomeStyled {...props} icon={faTrash} />,
   User: (props) => <FontAwesomeStyled {...props} icon={faUser} />

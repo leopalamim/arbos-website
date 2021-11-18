@@ -8,7 +8,7 @@ export const PageNames = {
   },
   PrivateArea: {
     Agriculture: "Agricultura",
-    Main: "Admin",
+    Main: "Dashboard",
     Operations: "Operações",
   },
 };
