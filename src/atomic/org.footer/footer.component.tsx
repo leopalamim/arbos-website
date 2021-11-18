@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
           </Col>
           <Col xs={12} sm={12} md={3}>
             <H3>Institucional</H3>
-            <Button variant={'link'} href={Routes.Faq}>
+            <Button variant={'link'} href={Routes.Institutional.Faq}>
               Perguntas frequentes
             </Button>
           </Col>

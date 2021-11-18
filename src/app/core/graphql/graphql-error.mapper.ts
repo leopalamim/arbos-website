@@ -35,7 +35,7 @@ const handleApolloError = ({
 
   const graphqlErrorMessage = graphQLErrors[0]?.message
 
-  const graphqlCredendtialsMessage = graphQLErrors[0].extensions.exception.data?.data[0].messages[0].message
+  const graphqlCredendtialsMessage = graphQLErrors[0]?.extensions.exception.data?.data[0].messages[0].message
 
   if (isTimeoutError(serverErrorMessage)) {
     return new AppError(ErrorType.Timeout)

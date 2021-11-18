@@ -6,7 +6,7 @@ const LoginPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Login - Poli Angels</title>
+        <title>Login - Arbos</title>
       </Head>
       <PageHeading title={'Login'} />
       <LoginSection />

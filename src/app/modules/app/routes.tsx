@@ -1,7 +1,14 @@
 export const Routes = {
+  Account: {
+    Login: '/conta/login', 
+  },
   Home: '/',
-  Faq: '/perguntas-frequentes',
+  Institutional: {
+    Faq: '/perguntas-frequentes',
+  },
   PrivateArea: {
-    Main: '/area-do-colaborador'
+    Agriculture: '/admin/agricultura',
+    Main: '/admin',
+    Operations: '/admin/operacoes',
   }
 }

@@ -12,6 +12,9 @@ import { useHideOverflowStore } from "@app/providers/hide.overflow.store";
 import { useFlashStore } from "app/providers/flash.message.store";
 import { ApolloProvider } from "@apollo/client";
 import { client } from "app/core/graphql/apollo-client";
+import { ColumnComponents, ColumnSideMenu, WrapperPage } from "@atomic/obj.grid/grid";
+import { SideMenu } from '@app/modules/private-area/side-menu/side-menu.component'
+import { MobilePrivateMenu } from '@app/modules/private-area/mobile-menu/mobile-private-menu.component'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [logged, setLogged] = useState<boolean>();
@@ -24,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       setLogged(isLogged);
     }
   }, [isLogged]);
+
   return (
     <>
       <Head>
@@ -37,9 +41,25 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ApolloProvider client={client}>
         <GlobalStore stores={[useFlashStore, useHideOverflowStore]}>
           <GlobalsWrapper>
-            <Header />
-            <Component {...pageProps} />
-            <Footer />
+            {logged ? (
+              <>
+                <WrapperPage>
+                  <ColumnSideMenu>
+                    <SideMenu />
+                  </ColumnSideMenu>
+                  <ColumnComponents>
+                    <MobilePrivateMenu />
+                    <Component {...pageProps} />
+                  </ColumnComponents>
+                </WrapperPage>
+              </>
+            ) : (
+              <>
+                <Header />
+                <Component {...pageProps} />
+                <Footer />
+              </>
+            )}
           </GlobalsWrapper>
         </GlobalStore>
       </ApolloProvider>

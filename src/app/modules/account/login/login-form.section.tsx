@@ -7,9 +7,8 @@ import React from 'react'
 
 export const LoginSection: React.FC = () => (
   <Grid>
-    <Row between={'xs'} top={'xs'}>
-      <Col xs={12} md={5}>
-        <H2>Acesso à área privada</H2>
+    <Row center={'xs'}>
+      <Col xs={12} md={6}>
         <LoginForm />
       </Col>
     </Row>
