@@ -1,20 +1,20 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import 'react-flexbox-grid/dist/react-flexbox-grid.css'
-import { Col as FlexCol, Grid as FlexGrid } from 'react-flexbox-grid/dist/react-flexbox-grid'
-import { Breakpoint } from '@atomic/obj.constants'
+import "react-flexbox-grid/dist/react-flexbox-grid.css";
+import { Col as FlexCol, Grid as FlexGrid } from "react-flexbox-grid/dist/react-flexbox-grid";
+import { Breakpoint } from "@atomic/obj.constants";
 
 interface ColProps {
-  hAlign?: string
+  hAlign?: string;
 }
 
 export const Col = styled(FlexCol)`
-  ${(props: ColProps) => (props.hAlign ? `text-align: ${props.hAlign}` : '')};
-`
+  ${(props: ColProps) => (props.hAlign ? `text-align: ${props.hAlign}` : "")};
+`;
 
 export const Grid = styled(FlexGrid)`
   padding: 0 32px;
-`
+`;
 export const ColumnSideMenu = styled.div`
   width: 0;
 
@@ -23,7 +23,7 @@ export const ColumnSideMenu = styled.div`
     margin: 0;
     padding: 0;
   }
-`
+`;
 
 export const ColumnComponents = styled.div`
   width: 100vw;
@@ -32,10 +32,16 @@ export const ColumnComponents = styled.div`
     margin: 0;
     padding: 0;
   }
-`
+`;
 
 export const WrapperPage = styled.div`
   display: flex;
   margin: 0;
   padding: 0;
-`
+`;
+
+export const OnlyDesktop = styled.div`
+  @media (max-width: ${Breakpoint.Desktop}) {
+    display: none;
+  }
+`;

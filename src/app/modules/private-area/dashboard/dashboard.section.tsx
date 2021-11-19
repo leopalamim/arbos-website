@@ -10,7 +10,7 @@ export const DashboardSection: React.FC = () => {
     <Grid>
       <Row>
         <Col xs={4}>
-          <CardFrame shadow={true} paddingType={"large"}>
+          <CardFrame paddingType={"large"}>
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={'center'}>
                 <FaIcon.Star size={"2x"} />
@@ -24,7 +24,7 @@ export const DashboardSection: React.FC = () => {
           </CardFrame>
         </Col>
         <Col xs={4}>
-          <CardFrame shadow={true} paddingType={'large'}>
+          <CardFrame paddingType={'large'}>
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={'center'}>
                 <FaIcon.PuzzlePiece size={"2x"} />

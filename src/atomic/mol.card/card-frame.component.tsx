@@ -10,7 +10,7 @@ export const CardFrame: React.FC<CardFrameStyledProps> = (props) => {
     <CardFrameWrapperStyled>
       {props.paddingType == "none" && props.children}
       {props.paddingType != "none" && (
-        <CardFrameStyled paddingType={props.paddingType} noBorder={props.noBorder} shadow={props.shadow}>
+        <CardFrameStyled paddingType={props.paddingType} noBorder={props.noBorder}>
           {props.children}
         </CardFrameStyled>
       )}

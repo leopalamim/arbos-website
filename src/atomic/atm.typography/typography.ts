@@ -18,7 +18,7 @@ export const DisplayStyled = styled.h1`
   font-size: ${FontSize.XXLarge};
   line-height: ${LineHeight.XLarge};
   font-weight: ${FontWeight.Regular};
-  color: ${Color.White};
+  color: ${Color.Black};
 `
 
 export const overflowTextCss = `

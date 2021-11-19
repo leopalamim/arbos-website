@@ -102,7 +102,7 @@ export enum Spacing {
   Small = "12px",
   Medium = "16px",
   Large = "24px",
-  XLarge = "40px",
+  XLarge = "80px",
   XXLarge = "160px",
 }
 
