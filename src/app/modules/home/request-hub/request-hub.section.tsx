@@ -10,7 +10,9 @@ import { Hbox } from "@atomic/obj.hbox";
 
 export const RequestHubSection: React.FC = () => (
   <Grid>
-    <Separator type={"section"} />
+    <Separator type={"subsection"} />
+    <Separator type={"subsection"} />
+    <Separator type={"subsection"} />
     <Row center={"xs"} start={'lg'} middle={'xs'}>
       <Col xs={12} lg={6}>
         <H2>Seu condomínio ainda não possui um Hub da Arbos?</H2>

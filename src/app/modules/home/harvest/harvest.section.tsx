@@ -63,6 +63,9 @@ export const HarvestSection = () => {
           </Hbox>
         </Col>
       </Row>
+      <Separator type={"subsection"} />
+      <Separator type={"subsection"} />
+      <Separator type={"subsection"} />
     </Grid>
   );
 };
