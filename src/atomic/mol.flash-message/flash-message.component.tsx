@@ -35,7 +35,7 @@ export class FlashMessage extends PureComponent<FlashMessageProps, FlashMessageS
     autoClose: true
   }
 
-  private timeoutList: number[] = []
+  private timeoutList: any[] = []
 
   constructor(props: FlashMessageProps) {
     super(props)
