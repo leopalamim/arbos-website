@@ -6,7 +6,7 @@ const PaymentPage: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Arbos - Pedir</title>
+        <title>Arbos - Pagar</title>
       </Head>
       <PaymentSection />
     </div>
