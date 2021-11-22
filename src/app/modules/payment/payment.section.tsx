@@ -9,7 +9,7 @@ export const PaymentSection: React.FC = () => (
     <Separator type={"subsection"} />
     <Row center={"xs"}>
       <Col xs={12}>
-        <Widget id={"DJbEAKqK"} style={{ height: "700px" }} />
+        <Widget id={"DJbEAKqK"} style={{ height: "500px" }} />
       </Col>
     </Row>
     <Separator type={"section"} />
