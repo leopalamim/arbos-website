@@ -15,6 +15,7 @@ import { client } from "app/core/graphql/apollo-client";
 import { ColumnComponents, ColumnSideMenu, WrapperPage } from "@atomic/obj.grid/grid";
 import { SideMenu } from '@app/modules/private-area/side-menu/side-menu.component'
 import { MobilePrivateMenu } from '@app/modules/private-area/mobile-menu/mobile-private-menu.component'
+import * as gtag from '../../lib/gtag'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [logged, setLogged] = useState<boolean>();
@@ -27,6 +28,16 @@ function MyApp({ Component, pageProps }: AppProps) {
       setLogged(isLogged);
     }
   }, [isLogged]);
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
 
   return (
     <>
