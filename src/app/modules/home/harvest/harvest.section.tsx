@@ -56,7 +56,7 @@ export const HarvestSection = () => {
               <Hbox.Item vAlign={"center"}>
                 <H3>Você colhe</H3>
                 <Body>
-                  Você colhe o vegetal na hora da compra. Nossos vegetais mantém o frescor e o sabor por muito mais tempo
+                  Você colhe o vegetal na hora da compra. Nossos vegetais mantêm o frescor e o sabor por muito mais tempo
                   deixando a raiz submersa em 2cm de água.
                 </Body>
                 <Separator type={"line"} />
