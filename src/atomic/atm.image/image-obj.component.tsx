@@ -14,7 +14,7 @@ import harvest from "@assets/img/img-harvest.png";
 import hub from "@assets/img/img-hub.jpg";
 import hubFull from "@assets/img/img-hub-full.png";
 import leaf from "@assets/img/img-leaf.png";
-import lettuce from "@assets/img/img-lettuce.jpg";
+import lettuce from "@assets/img/img-lettuce.png";
 import logoArbos from "@assets/img/img-logo.png";
 import muda from "@assets/img/img-muda.png";
 
@@ -31,6 +31,6 @@ export const ImageObj = {
   Hub: () => <Image src={hub} alt={"Hub"} width={"360px"} height={"542px"} />,
   HubFull: () => <Image src={hubFull} alt={"Hub"} width={"450px"} height={"450px"} />,
   Leaf: () => <Image src={leaf} alt={"Folha"} width={"106px"} height={"150px"} />,
-  Lettuce: () => <Image src={lettuce} alt={"Alface"} width={"300px"} height={"300px"} />,
+  Lettuce: () => <Image src={lettuce} alt={"Alface"} width={"450px"} height={"450px"} />,
   LogoArbos: () => <Image src={logoArbos} alt={"Logo da Arbos"} width={"70px"} height={"70px"} />,
 };

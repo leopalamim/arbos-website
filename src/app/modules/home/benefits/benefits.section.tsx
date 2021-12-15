@@ -13,12 +13,13 @@ export const BenefitsSection: React.FC = () => {
   return (
     <>
       <Grid>
+        <Separator type={'section'} />
         <Row between={"xs"} middle={"sm"} around={"xs"}>
           <Col xs={12} md={12} lg={4}>
             <H2>
-              O que você vai ter no quintal de casa
+              Por que é mais saudável se alimentar com a Arbos?
             </H2>
-            <Body>Você pode ter uma horta no quintal de casa, onde vai poder colher vegetais frescos, sem agrotóxicos e a qualquer hora, além de ajudar o planeta.</Body>
+            <Body>Conheça os benefícios dos nossos vegetais e melhore sua saúde.</Body>
             <Separator type={"subsection"} />
             <Link to={"requestHubSection"} smooth>
               <Button kind={"callToAction"}>Quero no meu condomínio</Button>
@@ -28,14 +29,14 @@ export const BenefitsSection: React.FC = () => {
           <Col xs={12} md={12} lg={8}>
             <Row>
               <Col xs={12} lg={6}>
-                <CardFrame paddingType={"large"}>
+                <CardFrame hoverEffect={true} paddingType={"large"}>
                   <Hbox>
                     <Hbox.Item noGrow={true} vAlign={"center"}>
                       <ImageObj.LettuceIcon />
                     </Hbox.Item>
                     <Hbox.Separator />
                     <Hbox.Item vAlign={"center"}>
-                      <H3>Vegetais frescos</H3>
+                      <H3>Mais frescos</H3>
                     </Hbox.Item>
                   </Hbox>
                   <Separator type={"line"} />
@@ -47,14 +48,14 @@ export const BenefitsSection: React.FC = () => {
                 <Separator type={"line"} />
               </Col>
               <Col xs={12} lg={6}>
-                <CardFrame paddingType={"large"}>
+                <CardFrame hoverEffect={true} paddingType={"large"}>
                   <Hbox>
                     <Hbox.Item noGrow={true} vAlign={"center"}>
                       <ImageObj.NoChemicalIcon />
                     </Hbox.Item>
                     <Hbox.Separator />
                     <Hbox.Item vAlign={"center"}>
-                      <H3>Sem agrotóxicos</H3>
+                      <H3>Mais saudáveis</H3>
                     </Hbox.Item>
                   </Hbox>
                   <Separator type={"line"} />
@@ -65,32 +66,32 @@ export const BenefitsSection: React.FC = () => {
                 <Separator type={"line"} />
               </Col>
               <Col xs={12} lg={6}>
-                <CardFrame paddingType={"large"}>
+                <CardFrame hoverEffect={true} paddingType={"large"}>
                   <Hbox>
                     <Hbox.Item noGrow={true} vAlign={"center"}>
                       <ImageObj.ClockIcon />
                     </Hbox.Item>
                     <Hbox.Separator />
                     <Hbox.Item vAlign={"center"}>
-                      <H3>A qualquer hora</H3>
+                      <H3>Mais duráveis</H3>
                     </Hbox.Item>
                   </Hbox>
                   <Separator type={"line"} />
                   <Body>
-                    Nosso hub vai estar no seu condomínio a qualquer hora. Pode colher seu vegetal até de madrugada.
+                    Seu vegetal pode durar até 1 semana. Basta colocá-lo em um copo d'água com a raiz submersa
                   </Body>
                 </CardFrame>
                 <Separator type={"line"} />
               </Col>
               <Col xs={12} lg={6}>
-                <CardFrame paddingType={"large"}>
+                <CardFrame hoverEffect={true} paddingType={"large"}>
                   <Hbox>
                     <Hbox.Item noGrow={true} vAlign={"center"}>
                       <ImageObj.WorldIcon />
                     </Hbox.Item>
                     <Hbox.Separator />
                     <Hbox.Item vAlign={"center"}>
-                      <H3>Sustentabilidade</H3>
+                      <H3>Mais sustentáveis</H3>
                     </Hbox.Item>
                   </Hbox>
                   <Separator type={"line"} />

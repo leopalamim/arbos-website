@@ -4,7 +4,7 @@ export const Routes = {
   },
   Home: '/',
   Institutional: {
-    Faq: '/perguntas-frequentes',
+    Faq: '/institucional/perguntas-frequentes',
   },
   PrivateArea: {
     Agriculture: '/admin/agricultura',

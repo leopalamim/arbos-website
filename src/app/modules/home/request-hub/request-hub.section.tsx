@@ -1,5 +1,5 @@
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
-import { Grid } from "atomic/obj.grid/grid";
+import { Grid, OnlyDesktop } from "atomic/obj.grid/grid";
 import { Separator } from "@atomic/atm.separator/separator.style";
 import { RequestHubForm } from "@app/modules/home/request-hub/request-hub-form.component";
 import { Body, H2 } from "atomic/atm.typography/typography";
@@ -10,10 +10,12 @@ import { Hbox } from "@atomic/obj.hbox";
 
 export const RequestHubSection: React.FC = () => (
   <Grid>
-    <Separator type={"subsection"} />
-    <Separator type={"subsection"} />
-    <Separator type={"subsection"} />
-    <Row center={"xs"} start={'lg'} middle={'xs'}>
+    <OnlyDesktop>
+      <Separator type={"subsection"} />
+      <Separator type={"subsection"} />
+      <Separator type={"subsection"} />
+    </OnlyDesktop>
+    <Row start={'lg'} middle={'xs'}>
       <Col xs={12} lg={6}>
         <H2>Seu condomínio ainda não possui um Hub da Arbos?</H2>
         <Body>Preencha seus dados abaixo e nós cuidamos do resto.</Body>
@@ -26,7 +28,7 @@ export const RequestHubSection: React.FC = () => (
       <Col xs={12} lg={6}>
         <Hbox>
           <Hbox.Item hAlign={'center'}>
-            <ImageObj.Garden />
+            <ImageObj.Lettuce />
           </Hbox.Item>
         </Hbox>
       </Col>

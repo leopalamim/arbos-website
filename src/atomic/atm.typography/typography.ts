@@ -21,6 +21,14 @@ export const DisplayStyled = styled.h1`
   color: ${Color.Black};
 `
 
+export const Subheading = styled.p`
+  font-family: ${FontFamily.Secondary};
+  font-size: ${FontSize.Medium};
+  font-weight: ${FontWeight.Regular};
+  line-height: ${LineHeight.Medium};
+  color: ${Color.GrayDark};
+`
+
 export const overflowTextCss = `
 width: 100%;
 text-overflow: ellipsis;

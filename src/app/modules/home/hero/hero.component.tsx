@@ -1,4 +1,4 @@
-import { DisplayStyled, Body, Enhance } from "atomic/atm.typography/typography";
+import { DisplayStyled, Body, Enhance, Subheading } from "atomic/atm.typography/typography";
 import { HeroGridStyled, HeroStyled, StrongWordBoxStyled } from "app/modules/home/hero/hero.component.style";
 import { Separator } from "@atomic/atm.separator";
 import { Button } from "@atomic/atm.button";
@@ -14,27 +14,20 @@ export const Hero: React.FC = () => (
         <Row middle={'xs'}>
           <Col xs={12} lg={6}>
             <DisplayStyled>
-              Tenha vegetais frescos
-              <StrongWordBoxStyled>dentro do seu condomínio</StrongWordBoxStyled>
+              Vegetais frescos
+              <StrongWordBoxStyled>dentro do condomínio</StrongWordBoxStyled>
             </DisplayStyled>
             <Separator type={"line"} />
-            <Body>
-              Com a Arbos, você pode descer uns lances de escada e colher vegetais hidropônicos dentro do seu
-              condomínio
-            </Body>
+            <Subheading>
+              Experimente a qualidade do alimento cultivado no seu bairro
+            </Subheading>
             <Separator type={"subsection"} />
             <Link to={"requestHubSection"} smooth>
               <Button kind={"callToAction"}>Quero no meu condomínio</Button>
             </Link>
           </Col>
-          <Col xs={6}>
-            <OnlyDesktop>
-              <ImageObj.HubFull />
-            </OnlyDesktop>
-          </Col>
         </Row>
       </HeroGridStyled>
     </HeroStyled>
-    <Separator type={"subsection"} />
   </>
 );

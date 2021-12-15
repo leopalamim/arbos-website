@@ -4,6 +4,7 @@ import { Color, Radius, Shadow, Spacing } from "atomic/obj.constants/constants";
 export interface CardFrameStyledProps {
   paddingType?: "none" | "zero" | "small" | "large";
   noBorder?: boolean;
+  hoverEffect?: boolean;
 }
 
 export const PaddingSize = {
@@ -28,6 +29,16 @@ export const CardFrameStyled = styled.div`
     padding: 0;
     box-shadow: none;
   `}
+
+  ${(props: CardFrameStyledProps) =>
+    props.hoverEffect == true &&
+    `
+    &:hover {
+      transform: scale(1.05);
+    }
+    transition: 0.3s;
+  `}
+
 
   ${(props: CardFrameStyledProps) =>
     props.paddingType != "none" &&
