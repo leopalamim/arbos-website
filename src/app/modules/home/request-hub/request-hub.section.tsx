@@ -12,8 +12,6 @@ export const RequestHubSection: React.FC = () => (
   <Grid>
     <OnlyDesktop>
       <Separator type={"subsection"} />
-      <Separator type={"subsection"} />
-      <Separator type={"subsection"} />
     </OnlyDesktop>
     <Row start={'lg'} middle={'xs'}>
       <Col xs={12} lg={6}>

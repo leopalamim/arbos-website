@@ -32,6 +32,7 @@ export const HarvestSection = () => {
                 <Separator type={"line"} />
               </Hbox.Item>
             </Hbox>
+            <Separator type={"line"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
                 <ImageObj.Truck />
@@ -46,6 +47,7 @@ export const HarvestSection = () => {
                 <Separator type={"line"} />
               </Hbox.Item>
             </Hbox>
+            <Separator type={"line"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
                 <ImageObj.Sprout />
