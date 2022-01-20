@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Hero } from 'app/modules/home/hero/hero.component'
 import { BenefitsSection } from '@app/modules/home/benefits/benefits.section'
-import { RequestHubSection } from '@app/modules/home/request-hub/request-hub.section'
+import { RequestSection } from '@app/modules/home/request/request.section'
 import { HarvestSection } from '@app/modules/home/harvest/harvest.section'
 
 const Home: NextPage = () => {
@@ -14,10 +14,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <BenefitsSection />
-      <HarvestSection />
-      <div id={'requestHubSection'}>
-        <RequestHubSection />
+      <div id={'benefitsSection'}>
+        <BenefitsSection />
+      </div>
+      <div id={'requestSection'}>
+        <RequestSection />
       </div>
     </div>
   )

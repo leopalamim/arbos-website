@@ -8,20 +8,7 @@ export const HeroStyled = styled.div`
   margin-top: 0px;
   height: 100vh;
 
-  background: ${Color.White} url(${heroImage}) center center no-repeat;
-  background-size: cover;
-
-  & ${Subheading} {
-    color: ${Color.White};
-  }
-
-  & ${DisplayStyled} {
-    color: ${Color.White};
-  }
-
-  & img {
-    max-width: 100%;
-  }
+  background: ${Color.GrayXLight};
 `;
 
 export const HeroGridStyled = styled(Grid)`
@@ -33,7 +20,7 @@ export const HeroGridStyled = styled(Grid)`
 `;
 
 export const StrongWordBoxStyled = styled.div`
-  color: ${Color.CallToAction};
+  color: ${Color.Primary};
   min-height: 6rem;
   width: 100%;
 

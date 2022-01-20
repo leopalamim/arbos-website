@@ -6,28 +6,63 @@ import { ImageObj } from "atomic/atm.image";
 import { Separator } from "@atomic/atm.separator/separator.style";
 import { Body, H2, H3 } from "atomic/atm.typography";
 import { CardFrame } from "@atomic/mol.card";
-import { Link } from 'react-scroll'
+import { Link } from "react-scroll";
 import { Button } from "@atomic/atm.button";
 
 export const BenefitsSection: React.FC = () => {
   return (
     <>
       <Grid>
-        <Separator type={'section'} />
+        <Separator type={"section"} />
         <Row between={"xs"} middle={"sm"} around={"xs"}>
           <Col xs={12} md={12} lg={4}>
-            <H2>
-              Por que é mais saudável se alimentar com a Arbos?
-            </H2>
-            <Body>Conheça os benefícios dos nossos vegetais e melhore sua saúde.</Body>
+            <H2>Por que é mais saudável e barato se alimentar com a Arbos?</H2>
+            <Body>Conheça os benefícios dos nossos vegetais e melhore sua saúde sem pagar muito por isso</Body>
             <Separator type={"subsection"} />
-            <Link to={"requestHubSection"} smooth>
-              <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+            <Link to={"requestSection"} smooth>
+              <Button kind={"callToAction"}>Quero ser mais saudável</Button>
             </Link>
             <Separator type={"subsection"} />
           </Col>
           <Col xs={12} md={12} lg={8}>
             <Row>
+              <Col xs={12} lg={6}>
+                <CardFrame hoverEffect={true} paddingType={"large"}>
+                  <Hbox>
+                    <Hbox.Item noGrow={true} vAlign={"center"}>
+                      <ImageObj.GiftIcon />
+                    </Hbox.Item>
+                    <Hbox.Separator />
+                    <Hbox.Item vAlign={"center"}>
+                      <H3>Mais prático</H3>
+                    </Hbox.Item>
+                  </Hbox>
+                  <Separator type={"line"} />
+                  <Body>
+                    Te enviamos um box com saladas semi-prontas para a semana inteira. É só misturar com os molhos e
+                    comer!
+                  </Body>
+                </CardFrame>
+                <Separator type={"line"} />
+              </Col>
+              <Col xs={12} lg={6}>
+                <CardFrame hoverEffect={true} paddingType={"large"}>
+                  <Hbox>
+                    <Hbox.Item noGrow={true} vAlign={"center"}>
+                      <ImageObj.DollarIcon />
+                    </Hbox.Item>
+                    <Hbox.Separator />
+                    <Hbox.Item vAlign={"center"}>
+                      <H3>Mais barato</H3>
+                    </Hbox.Item>
+                  </Hbox>
+                  <Separator type={"line"} />
+                  <Body>
+                    Produzimos nossas saladas com a maior eficiência para você ser saudável sem pagar muito por isso
+                  </Body>
+                </CardFrame>
+                <Separator type={"line"} />
+              </Col>
               <Col xs={12} lg={6}>
                 <CardFrame hoverEffect={true} paddingType={"large"}>
                   <Hbox>
@@ -40,46 +75,7 @@ export const BenefitsSection: React.FC = () => {
                     </Hbox.Item>
                   </Hbox>
                   <Separator type={"line"} />
-                  <Body>
-                    Colha seu próprio vegetal diretamente do Hub da Arbos, dentro do seu condomínio. Nós garantimos seu
-                    frescor.
-                  </Body>
-                </CardFrame>
-                <Separator type={"line"} />
-              </Col>
-              <Col xs={12} lg={6}>
-                <CardFrame hoverEffect={true} paddingType={"large"}>
-                  <Hbox>
-                    <Hbox.Item noGrow={true} vAlign={"center"}>
-                      <ImageObj.NoChemicalIcon />
-                    </Hbox.Item>
-                    <Hbox.Separator />
-                    <Hbox.Item vAlign={"center"}>
-                      <H3>Mais saudáveis</H3>
-                    </Hbox.Item>
-                  </Hbox>
-                  <Separator type={"line"} />
-                  <Body>
-                    Prezamos pela sua saúde. Durante nosso cultivo não usamos qualquer tipo de pesticida ou conservante.
-                  </Body>
-                </CardFrame>
-                <Separator type={"line"} />
-              </Col>
-              <Col xs={12} lg={6}>
-                <CardFrame hoverEffect={true} paddingType={"large"}>
-                  <Hbox>
-                    <Hbox.Item noGrow={true} vAlign={"center"}>
-                      <ImageObj.ClockIcon />
-                    </Hbox.Item>
-                    <Hbox.Separator />
-                    <Hbox.Item vAlign={"center"}>
-                      <H3>Mais duráveis</H3>
-                    </Hbox.Item>
-                  </Hbox>
-                  <Separator type={"line"} />
-                  <Body>
-                    Seu vegetal pode durar até 1 semana. Basta colocá-lo em um copo d'água com a raiz submersa
-                  </Body>
+                  <Body>Os vegetais são plantados aqui no bairro sem qualquer tipo de pesticida ou conservante.</Body>
                 </CardFrame>
                 <Separator type={"line"} />
               </Col>

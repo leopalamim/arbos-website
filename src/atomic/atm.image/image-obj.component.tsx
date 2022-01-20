@@ -2,6 +2,8 @@
 import { Image } from "./image.component";
 
 import clockIcon from "@assets/img/ic-clock.png";
+import dollarIcon from "@assets/img/ic-dollar.png";
+import giftIcon from "@assets/img/ic-gift.png";
 import lettuceIcon from "@assets/img/ic-lettuce.png";
 import noChemicalIcon from "@assets/img/ic-non-toxic.png";
 import sprout from "@assets/img/ic-sprout.png";
@@ -17,9 +19,12 @@ import leaf from "@assets/img/img-leaf.png";
 import lettuce from "@assets/img/img-lettuce.png";
 import logoArbos from "@assets/img/img-logo.png";
 import muda from "@assets/img/img-muda.png";
+import salad from "@assets/img/img-salad.png";
 
 export const ImageObj = {
   ClockIcon: () => <Image src={clockIcon} alt={"Relógio"} width={"50px"} height={"50px"} />,
+  DollarIcon: () => <Image src={dollarIcon} alt={"Moeda"} width={"50px"} height={"50px"} />,
+  GiftIcon: () => <Image src={giftIcon} alt={"Presente"} width={"50px"} height={"50px"} />,
   LettuceIcon: () => <Image src={lettuceIcon} alt={"Alface"} width={"50px"} height={"50px"} />,
   NoChemicalIcon: () => <Image src={noChemicalIcon} alt={"Sem químicos"} width={"50px"} height={"50px"} />,
   Sprout: () => <Image src={sprout} alt={"Muda"} width={"50px"} height={"50px"} />,
@@ -33,4 +38,5 @@ export const ImageObj = {
   Leaf: () => <Image src={leaf} alt={"Folha"} width={"106px"} height={"150px"} />,
   Lettuce: () => <Image src={lettuce} alt={"Alface"} width={"450px"} height={"450px"} />,
   LogoArbos: () => <Image src={logoArbos} alt={"Logo da Arbos"} width={"70px"} height={"70px"} />,
+  Salad: () => <Image src={salad} alt={"Salada"} width={"500px"} height={"500px"} />,
 };

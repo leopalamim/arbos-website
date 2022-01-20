@@ -15,17 +15,11 @@ export const Header: React.FC = () => {
           <Hbox.Item noGrow={true} vAlign={"center"}>
             <ImageObj.LogoArbos />
           </Hbox.Item>
-          <Hbox.Separator />
-          <Hbox.Item noGrow={true} vAlign={"center"}>
-            <Button kind={"link"} href={Routes.Home}>
-              Página inicial
-            </Button>
-          </Hbox.Item>
           <Hbox.Item vAlign={"center"} hAlign={"flex-end"}>
             <HeaderMenuDesktopWrapper>
-              <Link to={"requestHubSection"} smooth>
-                <Button kind={"callToAction"} href={Routes.Home}>
-                  Quero no meu condomínio
+              <Link to={"benefitsSection"} smooth>
+                <Button kind={"secondary"} href={Routes.Home}>
+                  Quero saber mais
                 </Button>
               </Link>
             </HeaderMenuDesktopWrapper>

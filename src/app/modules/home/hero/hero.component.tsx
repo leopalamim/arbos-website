@@ -1,30 +1,38 @@
-import { DisplayStyled, Body, Enhance, Subheading } from "atomic/atm.typography/typography";
+import { DisplayStyled, Body, Enhance, Subheading, LinkStyled } from "atomic/atm.typography/typography";
 import { HeroGridStyled, HeroStyled, StrongWordBoxStyled } from "app/modules/home/hero/hero.component.style";
 import { Separator } from "@atomic/atm.separator";
 import { Button } from "@atomic/atm.button";
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
-import { Link } from "react-scroll";
 import { ImageObj } from "@atomic/atm.image";
-import { OnlyDesktop } from "@atomic/obj.grid";
+import { Hbox } from "@atomic/obj.hbox";
+import { useForm } from "react-hook-form";
+import { useMutation } from "@app/core/graphql/graphql-mutation.hook";
+import { Link } from "react-scroll";
 
 export const Hero: React.FC = () => (
   <>
     <HeroStyled>
       <HeroGridStyled>
-        <Row middle={'xs'}>
+        <Row middle={"xs"}>
           <Col xs={12} lg={6}>
             <DisplayStyled>
-              Vegetais frescos
-              <StrongWordBoxStyled>dentro do condomínio</StrongWordBoxStyled>
+              Ser saudável nunca foi
+              <StrongWordBoxStyled>tão barato e fácil</StrongWordBoxStyled>
             </DisplayStyled>
-            <Separator type={"line"} />
-            <Subheading>
-              Experimente a qualidade do alimento cultivado no seu bairro
-            </Subheading>
+            <Subheading>Você pode comer uma salada saborosa, fresca e por um preço acessível</Subheading>
             <Separator type={"subsection"} />
-            <Link to={"requestHubSection"} smooth>
-              <Button kind={"callToAction"}>Quero no meu condomínio</Button>
+            <Link to={"requestSection"} smooth>
+              <Button kind={"callToAction"}>
+                Quero ser saudável
+              </Button>
             </Link>
+          </Col>
+          <Col xs={12} lg={6}>
+            <Hbox>
+              <Hbox.Item hAlign={"center"}>
+                <ImageObj.Salad />
+              </Hbox.Item>
+            </Hbox>
           </Col>
         </Row>
       </HeroGridStyled>

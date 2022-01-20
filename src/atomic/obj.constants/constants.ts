@@ -74,7 +74,7 @@ export enum FontSize {
   Medium = "1.5rem",
   Large = "1.75rem",
   XLarge = "2rem",
-  XXLarge = "5rem",
+  XXLarge = "3.5rem",
 }
 
 export const HeaderMenuHeight = "64px";
@@ -86,7 +86,7 @@ export enum LineHeight {
   Small = "1.1rem",
   Medium = "1.5rem",
   Large = "2rem",
-  XLarge = "5rem",
+  XLarge = "3.5rem",
 }
 
 export enum Radius {
