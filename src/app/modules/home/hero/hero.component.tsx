@@ -1,4 +1,4 @@
-import { DisplayStyled, Body, Enhance, Subheading, LinkStyled } from "atomic/atm.typography/typography";
+import { DisplayStyled, Body, Subheading } from "atomic/atm.typography/typography";
 import { HeroGridStyled, HeroStyled, StrongWordBoxStyled } from "app/modules/home/hero/hero.component.style";
 import { Separator } from "@atomic/atm.separator";
 import { Button } from "@atomic/atm.button";
@@ -14,14 +14,33 @@ export const Hero: React.FC = () => (
         <Row middle={"xs"}>
           <Col xs={12} lg={6}>
             <DisplayStyled>
-              Saudável.
-              <StrongWordBoxStyled>Barato. Prático.</StrongWordBoxStyled>
+              Sua salada.
+              <StrongWordBoxStyled>Agora barata e prática.</StrongWordBoxStyled>
             </DisplayStyled>
-            <Subheading>Você pode comer uma salada saborosa, fresca e por um preço acessível</Subheading>
+            <Subheading>
+              Você não deveria pagar caro para se alimentar de forma saudável. Nossa tecnologia torna nossas saladas
+              mais baratas para você, além de chegarem frescas e saborosas na porta da sua casa.
+            </Subheading>
             <Separator type={"subsection"} />
-            <Link to={"requestSection"} smooth>
-              <Button kind={"callToAction"}>Quero ser saudável</Button>
-            </Link>
+            <Hbox>
+              <Hbox.Item noGrow={true} vAlign={'center'}>
+                <Link to={"requestSection"} smooth>
+                  <Button kind={"callToAction"}>Quero ser saudável</Button>
+                </Link>
+              </Hbox.Item>
+              <Hbox.Separator />
+              <Hbox.Item noGrow={true} hAlign={'flex-start'} vAlign={'center'}>
+                <Body>ou</Body>
+              </Hbox.Item>
+              <Hbox.Separator />
+              <Hbox.Item noGrow={true} hAlign={'flex-start'} vAlign={'center'}>
+                <Link to={"howItWorksSection"} smooth>
+                  <Button kind={"primary"} variant={"link"}>
+                    quero saber mais
+                  </Button>
+                </Link>
+              </Hbox.Item>
+            </Hbox>
           </Col>
           <Col xs={12} lg={6}>
             <Hbox>
@@ -35,11 +54,11 @@ export const Hero: React.FC = () => (
         <Row center={"xs"}>
           <Col xs={4}>
             <ImageObj.TruckIcon />
-            <Body>Você recebe as saladas em casa</Body>
+            <Body>Você recebe suas saladas na porta de casa</Body>
           </Col>
           <Col xs={4}>
             <ImageObj.CoinsIcon />
-            <Body>Nunca mais pague mais de R$20,00 em uma salada</Body>
+            <Body>Não pague mais de R$20,00 em uma salada</Body>
           </Col>
           <Col xs={4}>
             <ImageObj.LettuceIcon />

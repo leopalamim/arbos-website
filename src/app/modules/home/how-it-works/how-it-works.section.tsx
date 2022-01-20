@@ -7,7 +7,7 @@ import { Separator } from "@atomic/atm.separator/separator.style";
 import { Body, H1, H2, H3, Stats } from "atomic/atm.typography";
 import { CardFrame } from "@atomic/mol.card";
 
-export const BenefitsSection: React.FC = () => {
+export const HowItWorksSection: React.FC = () => {
   return (
     <>
       <Grid>
@@ -33,7 +33,7 @@ export const BenefitsSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Você escolhe</H3>
+                  <H3>Você escolhe suas saladas preferidas</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
@@ -57,7 +57,7 @@ export const BenefitsSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Nós entregamos</H3>
+                  <H3>Nós entregamos na porta da sua casa</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
@@ -81,7 +81,7 @@ export const BenefitsSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Você mistura</H3>
+                  <H3>Você mistura com nossos molhos</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
@@ -103,7 +103,7 @@ export const BenefitsSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Você come</H3>
+                  <H3>Você come saudável sem peso no bolso</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />

@@ -7,13 +7,13 @@ import { DisplayStyled, Subheading } from "atomic/atm.typography/typography";
 export const HeroStyled = styled.div`
   margin-top: 0px;
   height: 100vh;
-  background: ${Color.GrayLight};
+  background: ${Color.GrayXLight};
 `;
 
 export const HeroGridStyled = styled(Grid)`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   height: 100%;
 `;

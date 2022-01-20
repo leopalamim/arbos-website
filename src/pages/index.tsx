@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Hero } from 'app/modules/home/hero/hero.component'
-import { BenefitsSection } from '@app/modules/home/benefits/benefits.section'
+import { HowItWorksSection } from '@app/modules/home/how-it-works/how-it-works.section'
 import { RequestSection } from '@app/modules/home/request/request.section'
 import { HarvestSection } from '@app/modules/home/harvest/harvest.section'
 
@@ -14,8 +14,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <div id={'benefitsSection'}>
-        <BenefitsSection />
+      <div id={'howItWorksSection'}>
+        <HowItWorksSection />
       </div>
       <div id={'requestSection'}>
         <RequestSection />

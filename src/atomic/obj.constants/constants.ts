@@ -21,7 +21,7 @@ export class Color {
   public static readonly GrayXDark = "#222";
   public static readonly GrayDark = "#555";
   public static readonly Gray = "#BDBDBD";
-  public static readonly GrayLight = "#EBEBEB";
+  public static readonly GrayLight = "#F1F1F1";
   public static readonly GrayXLight = "#F9F9F9";
 
   public static readonly Background = "#FFFDFB";

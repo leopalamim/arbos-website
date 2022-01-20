@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
           </Hbox.Item>
           <Hbox.Item vAlign={"center"} hAlign={"flex-end"}>
             <HeaderMenuDesktopWrapper>
-              <Link to={"benefitsSection"} smooth>
+              <Link to={"howItWorksSection"} smooth>
                 <Button kind={"secondary"} href={Routes.Home}>
                   Quero saber mais
                 </Button>
