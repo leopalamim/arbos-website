@@ -3,6 +3,7 @@ import { Button } from "atomic/atm.button/button.component";
 import { useForm } from "react-hook-form";
 import { useMutation } from "@app/core/graphql/graphql-mutation.hook";
 import { Separator } from "@atomic/atm.separator";
+import { Hbox } from "@atomic/obj.hbox";
 
 export const RequestForm = () => {
   const { register, errors, handleSubmit } = useForm();
@@ -24,9 +25,15 @@ export const RequestForm = () => {
 
   return (
     <Form onSubmit={handleSubmit(handleRequest)}>
-      <FormField placeholder={"Digite seu email..."} name={"email"} error={errors.email} register={register({ required: true })} />
-      <Separator type={"line"} />
-      <Button expanded={true}>Quero receber notícias</Button>
+      <Hbox>
+        <Hbox.Item>
+          <FormField placeholder={"Digite seu email..."} name={"email"} error={errors.email} register={register({ required: true })} />
+        </Hbox.Item>
+        <Hbox.Separator />
+        <Hbox.Item noGrow={true}>
+          <Button expanded={true}>Enviar</Button>
+        </Hbox.Item>
+      </Hbox>
     </Form>
   );
 };

@@ -5,8 +5,6 @@ import { Button } from "@atomic/atm.button";
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 import { ImageObj } from "@atomic/atm.image";
 import { Hbox } from "@atomic/obj.hbox";
-import { useForm } from "react-hook-form";
-import { useMutation } from "@app/core/graphql/graphql-mutation.hook";
 import { Link } from "react-scroll";
 
 export const Hero: React.FC = () => (
@@ -21,10 +19,8 @@ export const Hero: React.FC = () => (
             </DisplayStyled>
             <Subheading>Você pode comer uma salada saborosa, fresca e por um preço acessível</Subheading>
             <Separator type={"subsection"} />
-            <Link to={"requestSection"} smooth>
-              <Button kind={"callToAction"}>
-                Quero ser saudável
-              </Button>
+            <Link to={'requestSection'} smooth>
+              <Button kind={"callToAction"}>Quero ser saudável</Button>
             </Link>
           </Col>
           <Col xs={12} lg={6}>

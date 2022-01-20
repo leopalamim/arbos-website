@@ -39,7 +39,7 @@ export const BenefitsSection: React.FC = () => {
                   </Hbox>
                   <Separator type={"line"} />
                   <Body>
-                    Te enviamos um box com saladas semi-prontas para a semana inteira. É só misturar com os molhos e
+                    Te entregamos um box com saladas semi-prontas para a semana inteira. É só misturar com os molhos e
                     comer!
                   </Body>
                 </CardFrame>
