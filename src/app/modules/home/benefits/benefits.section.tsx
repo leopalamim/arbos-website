@@ -4,100 +4,114 @@ import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 import { Hbox } from "atomic/obj.hbox/hbox.component";
 import { ImageObj } from "atomic/atm.image";
 import { Separator } from "@atomic/atm.separator/separator.style";
-import { Body, H2, H3 } from "atomic/atm.typography";
+import { Body, H1, H2, H3, Stats } from "atomic/atm.typography";
 import { CardFrame } from "@atomic/mol.card";
-import { Link } from "react-scroll";
-import { Button } from "@atomic/atm.button";
 
 export const BenefitsSection: React.FC = () => {
   return (
     <>
       <Grid>
         <Separator type={"section"} />
-        <Row between={"xs"} middle={"sm"} around={"xs"}>
-          <Col xs={12} md={12} lg={4}>
-            <H2>Por que é mais saudável e barato se alimentar com a Arbos?</H2>
-            <Body>Conheça os benefícios dos nossos vegetais e melhore sua saúde sem pagar muito por isso</Body>
-            <Separator type={"subsection"} />
-            <Link to={"requestSection"} smooth>
-              <Button kind={"callToAction"}>Quero ser mais saudável</Button>
-            </Link>
-            <Separator type={"subsection"} />
+        <Row center={"xs"}>
+          <Col xs={12}>
+            <H1>Como funciona?</H1>
           </Col>
-          <Col xs={12} md={12} lg={8}>
-            <Row>
-              <Col xs={12} lg={6}>
-                <CardFrame hoverEffect={true} paddingType={"large"}>
-                  <Hbox>
-                    <Hbox.Item noGrow={true} vAlign={"center"}>
-                      <ImageObj.GiftIcon />
-                    </Hbox.Item>
-                    <Hbox.Separator />
-                    <Hbox.Item vAlign={"center"}>
-                      <H3>Mais prático</H3>
-                    </Hbox.Item>
-                  </Hbox>
-                  <Separator type={"line"} />
-                  <Body>
-                    Te entregamos um box com saladas semi-prontas para a semana inteira. É só misturar com os molhos e
-                    comer!
-                  </Body>
-                </CardFrame>
-                <Separator type={"line"} />
-              </Col>
-              <Col xs={12} lg={6}>
-                <CardFrame hoverEffect={true} paddingType={"large"}>
-                  <Hbox>
-                    <Hbox.Item noGrow={true} vAlign={"center"}>
-                      <ImageObj.DollarIcon />
-                    </Hbox.Item>
-                    <Hbox.Separator />
-                    <Hbox.Item vAlign={"center"}>
-                      <H3>Mais barato</H3>
-                    </Hbox.Item>
-                  </Hbox>
-                  <Separator type={"line"} />
-                  <Body>
-                    Produzimos nossas saladas com a maior eficiência para você ser saudável sem pagar muito por isso
-                  </Body>
-                </CardFrame>
-                <Separator type={"line"} />
-              </Col>
-              <Col xs={12} lg={6}>
-                <CardFrame hoverEffect={true} paddingType={"large"}>
-                  <Hbox>
-                    <Hbox.Item noGrow={true} vAlign={"center"}>
-                      <ImageObj.LettuceIcon />
-                    </Hbox.Item>
-                    <Hbox.Separator />
-                    <Hbox.Item vAlign={"center"}>
-                      <H3>Mais frescos</H3>
-                    </Hbox.Item>
-                  </Hbox>
-                  <Separator type={"line"} />
-                  <Body>Os vegetais são plantados aqui no bairro sem qualquer tipo de pesticida ou conservante.</Body>
-                </CardFrame>
-                <Separator type={"line"} />
-              </Col>
-              <Col xs={12} lg={6}>
-                <CardFrame hoverEffect={true} paddingType={"large"}>
-                  <Hbox>
-                    <Hbox.Item noGrow={true} vAlign={"center"}>
-                      <ImageObj.WorldIcon />
-                    </Hbox.Item>
-                    <Hbox.Separator />
-                    <Hbox.Item vAlign={"center"}>
-                      <H3>Mais sustentáveis</H3>
-                    </Hbox.Item>
-                  </Hbox>
-                  <Separator type={"line"} />
-                  <Body>
-                    Reutilizamos 95% da água utilizada no plantio. Ajude o seu planeta a se tornar mais sustentável.
-                  </Body>
-                </CardFrame>
-                <Separator type={"line"} />
-              </Col>
-            </Row>
+        </Row>
+        <Separator type={"subsection"} />
+        <Row>
+          <Col xs={12} lg={3}>
+            <Hbox>
+              <Hbox.Item hAlign={"center"}>
+                <ImageObj.Menu />
+              </Hbox.Item>
+            </Hbox>
+            <Separator type={"line"} />
+            <CardFrame hoverEffect={true} paddingType={"large"}>
+              <Hbox>
+                <Hbox.Item noGrow={true} vAlign={"center"}>
+                  <Stats>1</Stats>
+                </Hbox.Item>
+                <Hbox.Separator />
+                <Hbox.Item vAlign={"center"}>
+                  <H3>Você escolhe</H3>
+                </Hbox.Item>
+              </Hbox>
+              <Separator type={"line"} />
+              <Body>
+                Entregamos saladas semi-prontas na porta da sua casa. É só misturar com nossos molhos e comer!
+              </Body>
+            </CardFrame>
+            <Separator type={"line"} />
+          </Col>
+          <Col xs={12} lg={3}>
+            <Hbox>
+              <Hbox.Item hAlign={"center"}>
+                <ImageObj.Truck />
+              </Hbox.Item>
+            </Hbox>
+            <Separator type={"line"} />
+            <CardFrame hoverEffect={true} paddingType={"large"}>
+              <Hbox>
+                <Hbox.Item noGrow={true} vAlign={"center"}>
+                  <Stats>2</Stats>
+                </Hbox.Item>
+                <Hbox.Separator />
+                <Hbox.Item vAlign={"center"}>
+                  <H3>Nós entregamos</H3>
+                </Hbox.Item>
+              </Hbox>
+              <Separator type={"line"} />
+              <Body>
+                Produzimos nossas saladas com a maior eficiência para você ser saudável sem pagar muito por isso
+              </Body>
+            </CardFrame>
+            <Separator type={"line"} />
+          </Col>
+          <Col xs={12} lg={3}>
+            <Hbox>
+              <Hbox.Item hAlign={"center"}>
+                <ImageObj.Bowl />
+              </Hbox.Item>
+            </Hbox>
+            <Separator type={"line"} />
+            <CardFrame hoverEffect={true} paddingType={"large"}>
+              <Hbox>
+                <Hbox.Item noGrow={true} vAlign={"center"}>
+                  <Stats>3</Stats>
+                </Hbox.Item>
+                <Hbox.Separator />
+                <Hbox.Item vAlign={"center"}>
+                  <H3>Você mistura</H3>
+                </Hbox.Item>
+              </Hbox>
+              <Separator type={"line"} />
+              <Body>Os vegetais são plantados aqui no bairro sem qualquer tipo de pesticida ou conservante.</Body>
+            </CardFrame>
+            <Separator type={"line"} />
+          </Col>
+          <Col xs={12} lg={3}>
+            <Hbox>
+              <Hbox.Item hAlign={"center"}>
+                <ImageObj.Eat />
+              </Hbox.Item>
+            </Hbox>
+            <Separator type={"line"} />
+            <CardFrame hoverEffect={true} paddingType={"large"}>
+              <Hbox>
+                <Hbox.Item noGrow={true} vAlign={"center"}>
+                  <Stats>4</Stats>
+                </Hbox.Item>
+                <Hbox.Separator />
+                <Hbox.Item vAlign={"center"}>
+                  <H3>Você come</H3>
+                </Hbox.Item>
+              </Hbox>
+              <Separator type={"line"} />
+              <Body>
+                Reutilizamos 95% da água utilizada no plantio. Ajude o seu planeta a se tornar mais sustentável.
+              </Body>
+            </CardFrame>
+            <Separator type={"line"} />
           </Col>
         </Row>
         <Separator type={"section"} />

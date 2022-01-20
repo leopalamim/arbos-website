@@ -192,7 +192,7 @@ export const Stats = styled.label`
   font-size: ${FontSize.Large};
   line-height: ${LineHeight.Large};
   font-weight: ${FontWeight.Bold};
-  color: ${Color.Black};
+  color: ${Color.Primary};
   background-color: transparent;
 `
 export const DL = styled.dl`

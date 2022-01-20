@@ -14,12 +14,12 @@ export const Hero: React.FC = () => (
         <Row middle={"xs"}>
           <Col xs={12} lg={6}>
             <DisplayStyled>
-              Ser saudável nunca foi
-              <StrongWordBoxStyled>tão barato e fácil</StrongWordBoxStyled>
+              Saudável.
+              <StrongWordBoxStyled>Barato. Prático.</StrongWordBoxStyled>
             </DisplayStyled>
             <Subheading>Você pode comer uma salada saborosa, fresca e por um preço acessível</Subheading>
             <Separator type={"subsection"} />
-            <Link to={'requestSection'} smooth>
+            <Link to={"requestSection"} smooth>
               <Button kind={"callToAction"}>Quero ser saudável</Button>
             </Link>
           </Col>
@@ -29,6 +29,21 @@ export const Hero: React.FC = () => (
                 <ImageObj.Salad />
               </Hbox.Item>
             </Hbox>
+          </Col>
+        </Row>
+        <Separator type={"subsection"} />
+        <Row center={"xs"}>
+          <Col xs={4}>
+            <ImageObj.TruckIcon />
+            <Body>Você recebe as saladas em casa</Body>
+          </Col>
+          <Col xs={4}>
+            <ImageObj.CoinsIcon />
+            <Body>Nunca mais pague mais de R$20,00 em uma salada</Body>
+          </Col>
+          <Col xs={4}>
+            <ImageObj.LettuceIcon />
+            <Body>As nossas folhosas são plantadas aqui no bairro</Body>
           </Col>
         </Row>
       </HeroGridStyled>

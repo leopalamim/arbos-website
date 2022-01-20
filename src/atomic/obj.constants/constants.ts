@@ -1,7 +1,7 @@
 export enum BrandColor {
   Green = "#578959",
   LightGreen = "#A1C4AA",
-  DarkGreen = "#1F301E",
+  DarkGreen = "#184047",
   Red = "#DC143C",
 }
 
@@ -21,7 +21,7 @@ export class Color {
   public static readonly GrayXDark = "#222";
   public static readonly GrayDark = "#555";
   public static readonly Gray = "#BDBDBD";
-  public static readonly GrayLight = "#E8E8E8";
+  public static readonly GrayLight = "#EBEBEB";
   public static readonly GrayXLight = "#F9F9F9";
 
   public static readonly Background = "#FFFDFB";
@@ -56,8 +56,9 @@ export enum ProportionalSpacing {
 }
 
 export enum FontFamily {
-  Primary = "Source Serif Pro",
-  Secondary = "Belleza",
+  Primary = "Playfair Display",
+  Secondary = "Crimson Pro",
+  Subheading = "Inria Serif"
 }
 
 export enum FontWeight {

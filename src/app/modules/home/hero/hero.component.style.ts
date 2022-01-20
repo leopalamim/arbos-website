@@ -7,8 +7,7 @@ import { DisplayStyled, Subheading } from "atomic/atm.typography/typography";
 export const HeroStyled = styled.div`
   margin-top: 0px;
   height: 100vh;
-
-  background: ${Color.GrayXLight};
+  background: ${Color.GrayLight};
 `;
 
 export const HeroGridStyled = styled(Grid)`
@@ -23,8 +22,4 @@ export const StrongWordBoxStyled = styled.div`
   color: ${Color.Primary};
   min-height: 6rem;
   width: 100%;
-
-  @media (max-width: ${Breakpoint.Desktop}) {
-    color: ${Color.White};
-  }
 `;
