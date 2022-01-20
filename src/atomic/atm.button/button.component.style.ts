@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Color, FontFamily, FontSize, FontWeight, LineHeight, Radius, Spacing } from 'atomic/obj.constants/constants'
+import { Color, FontFamily, FontSize, FontWeight, LineHeight, Border, Spacing } from 'atomic/obj.constants/constants'
 
 export type ButtonKind = 'primary' | 'secondary' | 'callToAction' | 'link' | 'neutral' | 'alert'
 
@@ -45,7 +45,7 @@ export const ButtonWrapperStyled = styled.button<ButtonWrapperStyledProps>`
   font-size: ${FontSize.Small};
   background-color: ${(props: ButtonWrapperStyledProps) => buttonColor[props.kind].shapeColor};
   color: ${(props: ButtonWrapperStyledProps) => buttonColor[props.kind].textColor};
-  border-radius: ${Radius.Small};
+  border-radius: ${Border.Radius};
   border: 1px solid
     ${(props: ButtonWrapperStyledProps) =>
       props.kind === 'secondary' ? buttonColor[props.kind].textColor : buttonColor[props.kind].shapeColor};

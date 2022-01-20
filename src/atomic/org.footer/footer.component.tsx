@@ -20,13 +20,13 @@ export const Footer: React.FC = () => {
           </Col>
           <Col xs={12} sm={12} md={3}>
             <H3>Institucional</H3>
-            <Button variant={'link'} href={Routes.Institutional.Faq}>
+            <Button variant={"link"} href={Routes.Institutional.Faq}>
               Perguntas frequentes
             </Button>
           </Col>
           <Col xs={12} sm={12} md={5}>
             <H3>Fale conosco</H3>
-            <Row center={'xs'} start={'md'}>
+            <Row center={"xs"} start={"md"}>
               <Col>
                 <Hbox>
                   <Hbox.Item noGrow={true} vAlign={"center"}>
@@ -54,8 +54,8 @@ export const Footer: React.FC = () => {
             <Separator type={"subsection"} />
           </Col>
           <Col xs={12} sm={12} md={2}>
-            <H3>Redes sociais</H3>
-            <Row center={'xs'} start={'md'}>
+            <H3>Nossas redes</H3>
+            <Row center={"xs"} start={"md"}>
               <Col>
                 <Hbox>
                   <Hbox.Item noGrow={true}>
@@ -79,11 +79,11 @@ export const Footer: React.FC = () => {
         <Row center={"xs"}>
           <Col>
             <BodySecondary>
-              Desenvolvido por{" "}
+              Página desenvolvida por{" "}
               <LinkStyled href={ExternalLinks.Taqtile} as={"a"} target={"_blank"}>
                 Instituto Taqtile
               </LinkStyled>{" "}
-              @2021
+              @2022
             </BodySecondary>
           </Col>
         </Row>

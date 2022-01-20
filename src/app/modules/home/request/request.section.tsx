@@ -2,7 +2,7 @@ import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 import { Grid, OnlyDesktop } from "atomic/obj.grid/grid";
 import { Separator } from "@atomic/atm.separator/separator.style";
 import { RequestForm } from "@app/modules/home/request/request-form.component";
-import { Body, H2, DisplayStyled, LinkStyled } from "atomic/atm.typography/typography";
+import { Body, H2, Enhance, LinkStyled } from "atomic/atm.typography/typography";
 import React from "react";
 import { ImageIcon, ImageObj } from "@atomic/atm.image";
 import { Hbox } from "@atomic/obj.hbox";
@@ -13,35 +13,20 @@ export const RequestSection: React.FC = () => (
     <OnlyDesktop>
       <Separator type={"subsection"} />
     </OnlyDesktop>
-    <Row start={"lg"} middle={"xs"}>
+    <Row center ={'xs'}>
       <Col xs={12} lg={6}>
-        <DisplayStyled>Em breve estaremos entregando!</DisplayStyled>
-        <Separator type={"line"} />
-        <Body>Preecha seu email e receba atualizações da Arbos.</Body>
-        <Separator type={"line"} />
+        <H2>Faltam <Enhance>poucos dias</Enhance> para começarmos a entregar!</H2>
+        <Body>Ganhe <Enhance>10% de desconto</Enhance> em sua primeira compra ao preencher seu email!</Body>
+        <Separator type={"subsection"} />
         <RequestForm />
-        <Hbox>
-          <Hbox.Item noGrow={true}>
-            <LinkStyled href={ExternalLinks.Instagram} as={"a"} target={"_blank"}>
-              <ImageIcon.InstagramColored />
-            </LinkStyled>
-          </Hbox.Item>
-          <Hbox.Separator />
-          <Hbox.Item noGrow={true}>
-            <LinkStyled href={ExternalLinks.Linkedin} as={"a"} target={"_blank"}>
-              <ImageIcon.LinkedinColored />
-            </LinkStyled>
-          </Hbox.Item>
-          <Hbox.Separator />
-        </Hbox>
       </Col>
-      <Col xs={12} lg={6}>
+      {/* <Col xs={12} lg={6}>
         <Hbox>
           <Hbox.Item hAlign={"center"}>
             <ImageObj.Lettuce />
           </Hbox.Item>
         </Hbox>
-      </Col>
+      </Col> */}
     </Row>
     <Separator type={"section"} />
   </Grid>

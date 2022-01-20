@@ -71,10 +71,10 @@ export enum FontWeight {
 export enum FontSize {
   XXSmall = "1rem",
   XSmall = "1.2rem",
-  Small = "1.3rem",
-  Medium = "1.5rem",
-  Large = "1.75rem",
-  XLarge = "2rem",
+  Small = "1.4rem",
+  Medium = "1.6rem",
+  Large = "2rem",
+  XLarge = "2.5rem",
   XXLarge = "3.5rem",
 }
 

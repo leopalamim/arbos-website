@@ -31,7 +31,7 @@ export const RequestForm = () => {
         </Hbox.Item>
         <Hbox.Separator />
         <Hbox.Item noGrow={true}>
-          <Button expanded={true}>Enviar</Button>
+          <Button kind={"callToAction"} expanded={true}>Me notifique!</Button>
         </Hbox.Item>
       </Hbox>
     </Form>

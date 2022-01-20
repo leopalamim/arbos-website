@@ -4,7 +4,7 @@ import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 import { Hbox } from "atomic/obj.hbox/hbox.component";
 import { ImageObj } from "atomic/atm.image";
 import { Separator } from "@atomic/atm.separator/separator.style";
-import { Body, H1, H2, H3, Stats } from "atomic/atm.typography";
+import { Body, H2, H3, Stats } from "atomic/atm.typography";
 import { CardFrame } from "@atomic/mol.card";
 
 export const HowItWorksSection: React.FC = () => {
@@ -14,7 +14,7 @@ export const HowItWorksSection: React.FC = () => {
         <Separator type={"section"} />
         <Row center={"xs"}>
           <Col xs={12}>
-            <H1>Como funciona?</H1>
+            <H2>Como funciona?</H2>
           </Col>
         </Row>
         <Separator type={"subsection"} />
@@ -33,12 +33,12 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Você escolhe suas saladas preferidas</H3>
+                  <H3>Escolha suas saladas preferidas</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Entregamos saladas semi-prontas na porta da sua casa. É só misturar com nossos molhos e comer!
+                Nosso cardápio conta com saladas de dar água na boca. Escolha suas preferidas!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
@@ -57,12 +57,12 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Nós entregamos na porta da sua casa</H3>
+                  <H3>Receba na porta da sua casa</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Produzimos nossas saladas com a maior eficiência para você ser saudável sem pagar muito por isso
+                Acreditamos que você pode ser saudável sem sair de casa. Deixe que nós levamos!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
@@ -81,11 +81,11 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Você mistura com nossos molhos</H3>
+                  <H3>Misture com nossos molhos</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
-              <Body>Os vegetais são plantados aqui no bairro sem qualquer tipo de pesticida ou conservante.</Body>
+              <Body>Entregamos saladas semi-prontas com molhos a parte. É só misturar e comer!</Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>
@@ -103,12 +103,12 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Você come saudável sem peso no bolso</H3>
+                  <H3>Coma saudável sem peso no bolso</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Reutilizamos 95% da água utilizada no plantio. Ajude o seu planeta a se tornar mais sustentável.
+                Cuide da sua saúde sem pagar muito por isso. Ser saudável é importante e barato!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
