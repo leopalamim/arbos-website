@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
                   </Hbox.Item>
                   <Hbox.Separator />
                   <Hbox.Item>
-                    <LinkStyled href={"mailto:contato@poliangels.com.br"}>
+                    <LinkStyled href={"mailto:contato@arbosfood.com.br"}>
                       <BodySecondary as={"a"}>contato@arbosfood.com.br</BodySecondary>
                     </LinkStyled>
                   </Hbox.Item>
