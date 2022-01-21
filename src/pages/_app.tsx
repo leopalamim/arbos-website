@@ -42,6 +42,20 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <title>Arbos Food</title>
+        <meta property={"og:title"} content={"Arbos Food"} />
+        <meta property={"og:type"} content={"website"} />
+        <meta property={"og:url"} content="https://www.arbosfood.com.br/" />
+        <meta property="og:description" content={"Sua alimentação saudável. Mais prática e barata."} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name={"description"}
+          content={
+            "A Arbos é uma startup fundada por ex-alunos da USP apaixonados por alimentação, saúde e tecnologia. Sua missão é melhorar a qualidade de vida das pessoas, fornecendo alimentos saudáveis, frescos e baratos."
+          }
+        ></meta>
+        <link rel={"icon"} type={"image/png"} sizes={"32x32"} href={"/favicon-32x32.png"} />
+        <link rel={"icon"} type={"image/png"} sizes={"16x16"} href={"/favicon-16x16.png"} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
