@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color, Radius, Shadow, Spacing } from "atomic/obj.constants/constants";
+import { Color, Border, Shadow, Spacing } from "atomic/obj.constants/constants";
 
 export interface CardFrameStyledProps {
   paddingType?: "none" | "zero" | "small" | "large";
@@ -20,7 +20,7 @@ export const CardFrameWrapperStyled = styled.div`
 export const CardFrameStyled = styled.div`
   background-color: ${Color.White};
   box-shadow: ${Shadow};
-  border-radius: ${(props: CardFrameStyledProps) => (props.noBorder ? "0" : Radius.Small)};
+  border-radius: ${(props: CardFrameStyledProps) => (props.noBorder ? "0" : Border.Radius)};
 
   ${(props: CardFrameStyledProps) =>
     props.paddingType == "none" &&

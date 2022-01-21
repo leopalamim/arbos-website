@@ -1,7 +1,7 @@
 export enum BrandColor {
   Green = "#578959",
   LightGreen = "#A1C4AA",
-  DarkGreen = "#1F301E",
+  DarkGreen = "#184047",
   Red = "#DC143C",
 }
 
@@ -21,7 +21,7 @@ export class Color {
   public static readonly GrayXDark = "#222";
   public static readonly GrayDark = "#555";
   public static readonly Gray = "#BDBDBD";
-  public static readonly GrayLight = "#E8E8E8";
+  public static readonly GrayLight = "#F1F1F1";
   public static readonly GrayXLight = "#F9F9F9";
 
   public static readonly Background = "#FFFDFB";
@@ -56,8 +56,9 @@ export enum ProportionalSpacing {
 }
 
 export enum FontFamily {
-  Primary = "Source Serif Pro",
-  Secondary = "Belleza",
+  Primary = "Playfair Display",
+  Secondary = "Crimson Pro",
+  Subheading = "Inria Serif"
 }
 
 export enum FontWeight {
@@ -70,11 +71,11 @@ export enum FontWeight {
 export enum FontSize {
   XXSmall = "1rem",
   XSmall = "1.2rem",
-  Small = "1.3rem",
-  Medium = "1.5rem",
-  Large = "1.75rem",
-  XLarge = "2rem",
-  XXLarge = "5rem",
+  Small = "1.4rem",
+  Medium = "1.6rem",
+  Large = "2rem",
+  XLarge = "2.5rem",
+  XXLarge = "3.5rem",
 }
 
 export const HeaderMenuHeight = "64px";
@@ -86,7 +87,7 @@ export enum LineHeight {
   Small = "1.1rem",
   Medium = "1.5rem",
   Large = "2rem",
-  XLarge = "5rem",
+  XLarge = "3.5rem",
 }
 
 export enum Radius {

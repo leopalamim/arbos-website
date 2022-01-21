@@ -2,10 +2,6 @@ query RequestsQuery {
   requests {
     id
     created_at
-    name
-    phone
     email
-    address
-    person
   }
 }

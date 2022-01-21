@@ -19,10 +19,6 @@ export const HarvestSection = () => {
           <Col xs={12} lg={4}>
             <H2>Como funciona?</H2>
             <Hbox>
-              <Hbox.Item noGrow={true} vAlign={"center"}>
-                <ImageObj.LettuceIcon />
-              </Hbox.Item>
-              <Hbox.Separator />
               <Hbox.Item vAlign={"center"}>
                 <H3>Nós plantamos</H3>
                 <Body>
@@ -49,10 +45,6 @@ export const HarvestSection = () => {
             </Hbox>
             <Separator type={"line"} />
             <Hbox>
-              <Hbox.Item noGrow={true} vAlign={"center"}>
-                <ImageObj.Sprout />
-              </Hbox.Item>
-              <Hbox.Separator />
               <Hbox.Item vAlign={"center"}>
                 <H3>Você colhe</H3>
                 <Body>

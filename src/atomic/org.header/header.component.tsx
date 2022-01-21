@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageObj } from "atomic/atm.image/image-obj.component";
-import { HeaderMenu, HeaderMenuWrapper, HeaderMenuDesktopWrapper } from "atomic/org.header/header.component.style";
+import { HeaderMenu, HeaderMenuWrapper } from "atomic/org.header/header.component.style";
 import { Hbox } from "@atomic/obj.hbox/hbox.component";
 import { Button } from "@atomic/atm.button";
 import { Routes } from "@app/modules/app/routes";
@@ -16,19 +16,10 @@ export const Header: React.FC = () => {
             <ImageObj.LogoArbos />
           </Hbox.Item>
           <Hbox.Separator />
-          <Hbox.Item noGrow={true} vAlign={"center"}>
-            <Button kind={"link"} href={Routes.Home}>
-              Página inicial
+          <Hbox.Item noGrow={true} vAlign={"center"} hAlign={"flex-start"}>
+            <Button kind={"primary"} variant={"link"} href={Routes.Home}>
+              Início
             </Button>
-          </Hbox.Item>
-          <Hbox.Item vAlign={"center"} hAlign={"flex-end"}>
-            <HeaderMenuDesktopWrapper>
-              <Link to={"requestHubSection"} smooth>
-                <Button kind={"callToAction"} href={Routes.Home}>
-                  Quero no meu condomínio
-                </Button>
-              </Link>
-            </HeaderMenuDesktopWrapper>
           </Hbox.Item>
         </Hbox>
       </HeaderMenu>

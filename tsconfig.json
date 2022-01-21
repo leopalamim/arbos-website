@@ -2,17 +2,37 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@app": ["app"],
-      "@app/*": ["app/*"],
-      "@assets": ["assets"],
-      "@assets/*": ["assets/*"],
-      "@atomic": ["atomic"],
-      "@atomic/*": ["atomic/*"],
-      "@pages": ["pages"],
-      "@pages/*": ["pages/*"]
+      "@app": [
+        "app"
+      ],
+      "@app/*": [
+        "app/*"
+      ],
+      "@assets": [
+        "assets"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@atomic": [
+        "atomic"
+      ],
+      "@atomic/*": [
+        "atomic/*"
+      ],
+      "@pages": [
+        "pages"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ]
     },
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -23,8 +43,16 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "babel.config.js"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js"
+  ]
 }

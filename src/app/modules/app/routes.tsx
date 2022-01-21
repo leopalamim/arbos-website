@@ -10,5 +10,6 @@ export const Routes = {
     Agriculture: '/admin/agricultura',
     Main: '/admin',
     Operations: '/admin/operacoes',
-  }
+  },
+  Thanks: '/obrigado'
 }
