@@ -1,5 +1,11 @@
 import { DisplayStyled, Body, Subheading } from "atomic/atm.typography/typography";
-import { HeroGridStyled, HeroStyled, HeroWave, HeroWaveWrapper, StrongWordBoxStyled } from "app/modules/home/hero/hero.component.style";
+import {
+  HeroGridStyled,
+  HeroStyled,
+  HeroWave,
+  HeroWaveWrapper,
+  StrongWordBoxStyled,
+} from "app/modules/home/hero/hero.component.style";
 import { Separator } from "@atomic/atm.separator";
 import { Button } from "@atomic/atm.button";
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
@@ -18,24 +24,26 @@ export const Hero: React.FC = () => (
               Sua salada.
               <StrongWordBoxStyled>Agora barata e prática.</StrongWordBoxStyled>
             </DisplayStyled>
-            <Separator type={'line'} />
+            <Separator type={"line"} />
+            <Subheading>Você não deveria pagar caro para se alimentar de forma saudável.</Subheading>
+            <Separator type={"line"} />
             <Subheading>
-              Você não deveria pagar caro para se alimentar de forma saudável. Nossa tecnologia torna nossas saladas
-              mais baratas para você, além de chegarem frescas e saborosas na porta da sua casa.
+              Nossa tecnologia torna nossas saladas mais baratas para você, além de chegarem frescas e saborosas na
+              porta da sua casa.
             </Subheading>
             <Separator type={"subsection"} />
             <Hbox>
-              <Hbox.Item noGrow={true} vAlign={'center'}>
+              <Hbox.Item noGrow={true} vAlign={"center"}>
                 <Link to={"requestSection"} smooth>
                   <Button kind={"callToAction"}>Quero ser saudável</Button>
                 </Link>
               </Hbox.Item>
               <Hbox.Separator />
-              <Hbox.Item noGrow={true} hAlign={'flex-start'} vAlign={'center'}>
+              <Hbox.Item noGrow={true} hAlign={"flex-start"} vAlign={"center"}>
                 <Body>ou</Body>
               </Hbox.Item>
               <Hbox.Separator />
-              <Hbox.Item noGrow={true} hAlign={'flex-start'} vAlign={'center'}>
+              <Hbox.Item noGrow={true} hAlign={"flex-start"} vAlign={"center"}>
                 <Link to={"howItWorksSection"} smooth>
                   <Button kind={"primary"} variant={"link"}>
                     quero saber mais
@@ -43,7 +51,7 @@ export const Hero: React.FC = () => (
                 </Link>
               </Hbox.Item>
             </Hbox>
-            <Separator type={'line'} />
+            <Separator type={"line"} />
           </Col>
           <Col xs={12} lg={6}>
             <Hbox>
@@ -65,7 +73,7 @@ export const Hero: React.FC = () => (
           </Col>
           <Col xs={4}>
             <ImageObj.LettuceIcon />
-            <Body>As saladas são frescas e as folhas são plantadas aqui no bairro</Body>
+            <Body>As saladas são frescas e as folhas são plantadas perto de você</Body>
           </Col>
         </Row>
       </HeroGridStyled>
