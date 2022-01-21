@@ -20,13 +20,6 @@ export const RequestSection: React.FC = () => (
         <Separator type={"subsection"} />
         <RequestForm />
       </Col>
-      {/* <Col xs={12} lg={6}>
-        <Hbox>
-          <Hbox.Item hAlign={"center"}>
-            <ImageObj.Lettuce />
-          </Hbox.Item>
-        </Hbox>
-      </Col> */}
     </Row>
     <Separator type={"section"} />
   </Grid>

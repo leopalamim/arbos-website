@@ -12,7 +12,7 @@ export const ThanksSection: React.FC = () => (
       <Col xs={6}>
         <Body>
           Agradecemos muito pela confiança. Assim que estivermos entregando, vamos te notificar por email. Quer ganhar{" "}
-          <Enhance>mais 10% de desconto</Enhance> em sua primeira compra? É só convidar 2 amigos!
+          <Enhance>mais 10% de desconto</Enhance> em sua primeira compra? É só convidar 2 amigos e guardar os prints!
         </Body>
         <Separator type={"subsection"} />
         <Hbox>

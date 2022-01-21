@@ -61,11 +61,11 @@ export const Hero: React.FC = () => (
           </Col>
           <Col xs={4}>
             <ImageObj.CoinsIcon />
-            <Body>Não pague mais de R$20,00 em uma salada</Body>
+            <Body>Nunca mais pague caro para se alimentar de forma saudável</Body>
           </Col>
           <Col xs={4}>
             <ImageObj.LettuceIcon />
-            <Body>As nossas folhosas são plantadas aqui no bairro</Body>
+            <Body>As saladas são frescas e as folhas são plantadas aqui no bairro</Body>
           </Col>
         </Row>
       </HeroGridStyled>
