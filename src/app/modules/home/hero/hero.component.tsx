@@ -1,11 +1,12 @@
 import { DisplayStyled, Body, Subheading } from "atomic/atm.typography/typography";
-import { HeroGridStyled, HeroStyled, StrongWordBoxStyled } from "app/modules/home/hero/hero.component.style";
+import { HeroGridStyled, HeroStyled, HeroWave, HeroWaveWrapper, StrongWordBoxStyled } from "app/modules/home/hero/hero.component.style";
 import { Separator } from "@atomic/atm.separator";
 import { Button } from "@atomic/atm.button";
 import { Row, Col } from "react-flexbox-grid/dist/react-flexbox-grid";
 import { ImageObj } from "@atomic/atm.image";
 import { Hbox } from "@atomic/obj.hbox";
 import { Link } from "react-scroll";
+import { OnlyDesktop } from "@atomic/obj.grid";
 
 export const Hero: React.FC = () => (
   <>
@@ -17,6 +18,7 @@ export const Hero: React.FC = () => (
               Sua salada.
               <StrongWordBoxStyled>Agora barata e prática.</StrongWordBoxStyled>
             </DisplayStyled>
+            <Separator type={'line'} />
             <Subheading>
               Você não deveria pagar caro para se alimentar de forma saudável. Nossa tecnologia torna nossas saladas
               mais baratas para você, além de chegarem frescas e saborosas na porta da sua casa.
@@ -41,6 +43,7 @@ export const Hero: React.FC = () => (
                 </Link>
               </Hbox.Item>
             </Hbox>
+            <Separator type={'line'} />
           </Col>
           <Col xs={12} lg={6}>
             <Hbox>
@@ -67,5 +70,10 @@ export const Hero: React.FC = () => (
         </Row>
       </HeroGridStyled>
     </HeroStyled>
+    <OnlyDesktop>
+      <HeroWaveWrapper>
+        <HeroWave />
+      </HeroWaveWrapper>
+    </OnlyDesktop>
   </>
 );

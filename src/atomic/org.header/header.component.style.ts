@@ -22,9 +22,3 @@ export const HeaderMenuWrapper = styled.div`
   height: 70px;
   overflow: hidden;
 `
-
-export const HeaderMenuDesktopWrapper = styled.div`
-  @media (max-width: ${Breakpoint.Tablet}) {
-    display: none;
-  }
-`
