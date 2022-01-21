@@ -85,7 +85,7 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
-              <Body>Entregamos saladas semi-prontas com molhos a parte. É só misturar e comer!</Body>
+              <Body>Entregamos nossas saladas semi-prontas para consumir quando quiser. É só misturar e comer!</Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>

@@ -1,6 +1,6 @@
 import { ExternalLinks } from "@app/modules/app/external-links";
 import { Separator } from "@atomic/atm.separator";
-import { Body, Enhance } from "@atomic/atm.typography";
+import { Body, Enhance, H2 } from "@atomic/atm.typography";
 import { Grid } from "@atomic/obj.grid";
 import { Hbox } from "@atomic/obj.hbox";
 import { ShareComponent } from "@atomic/obj.share-component";
@@ -11,7 +11,13 @@ export const ThanksSection: React.FC = () => (
     <Row center={"xs"}>
       <Col xs={6}>
         <Body>
-          Agradecemos muito pela confiança. Assim que estivermos entregando, vamos te notificar por email. Quer ganhar{" "}
+          Agradecemos muito pela confiança. Assim que estivermos entregando, vamos te notificar por email.
+        </Body>
+        <H2>
+          Quer mais desconto?
+        </H2>
+        <Body>
+          Quer ganhar{" "}
           <Enhance>mais 10% de desconto</Enhance> em sua primeira compra? É só convidar 2 amigos e guardar os prints!
         </Body>
         <Separator type={"subsection"} />
