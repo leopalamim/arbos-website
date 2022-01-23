@@ -25,7 +25,7 @@ export const Hero: React.FC = () => (
               <StrongWordBoxStyled>sem sair de casa</StrongWordBoxStyled>
             </DisplayStyled>
             <Separator type={"line"} />
-            <Subheading>Nossas saladas são entregues frescas e por um preço justo, na porta da sua casa ou no trabalho</Subheading>
+            <Subheading>Nossas saladas são entregues frescas e por um preço justo, na sua casa ou trabalho</Subheading>
             <Separator type={"subsection"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
