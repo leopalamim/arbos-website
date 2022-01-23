@@ -38,7 +38,7 @@ export const HowItWorksSection: React.FC = () => {
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Nosso cardápio conta com saladas de dar água na boca. Escolha suas preferidas!
+                Nosso cardápio conta com saladas de dar água na boca para ter saúde com gosto!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
@@ -61,7 +61,7 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
-              <Body>Seus pedidos são entregues em um dos dias disponíveis para você encaixar na sua rotina!</Body>
+              <Body>Nossa entrega programada é flexível e encaixa na sua rotina, sem atrasos!</Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>
@@ -84,7 +84,7 @@ export const HowItWorksSection: React.FC = () => {
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Acreditamos que você pode ser saudável sem sair de casa. Deixe que nós levamos!
+                Você pode ser saudável sem sair de casa. Deixe que nós levamos!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
@@ -103,12 +103,12 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Coma saudável sem peso no bolso</H3>
+                  <H3>Misture sua salada e aproveite</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Cuide da sua saúde sem pagar muito por isso. Ser saudável é importante e barato!
+                Pegue sua refeição, misture-a como quiser e coma com sabor!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
