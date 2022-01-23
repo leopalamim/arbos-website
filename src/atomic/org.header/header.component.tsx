@@ -21,6 +21,12 @@ export const Header: React.FC = () => {
               Início
             </Button>
           </Hbox.Item>
+          <Hbox.Separator />
+          <Hbox.Item noGrow={true} vAlign={"center"} hAlign={"flex-start"}>
+            <Button kind={"primary"} variant={"link"} href={Routes.Institutional.Faq}>
+              Perguntas frequentes
+            </Button>
+          </Hbox.Item>
         </Hbox>
       </HeaderMenu>
     </HeaderMenuWrapper>

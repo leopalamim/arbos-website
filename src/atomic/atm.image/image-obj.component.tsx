@@ -7,6 +7,7 @@ import dollarIcon from "@assets/img/ic-dollar.png";
 import giftIcon from "@assets/img/ic-gift.png";
 import lettuceIcon from "@assets/img/ic-lettuce.png";
 import noChemicalIcon from "@assets/img/ic-non-toxic.png";
+import saladIcon from "@assets/img/ic-salad.png";
 import sproutIcon from "@assets/img/ic-sprout.png";
 import truckIcon from "@assets/img/ic-truck.png";
 import vegetablesIcon from "@assets/img/ic-vegetables.png";
@@ -34,6 +35,7 @@ export const ImageObj = {
   GiftIcon: () => <Image src={giftIcon} alt={"Presente"} width={"50px"} height={"50px"} />,
   LettuceIcon: () => <Image src={lettuceIcon} alt={"Alface"} width={"50px"} height={"50px"} />,
   NoChemicalIcon: () => <Image src={noChemicalIcon} alt={"Sem químicos"} width={"50px"} height={"50px"} />,
+  SaladIcon: () => <Image src={saladIcon} alt={"Salada"} width={"50px"} height={"50px"} />,
   SproutIcon: () => <Image src={sproutIcon} alt={"Muda"} width={"50px"} height={"50px"} />,
   TruckIcon: () => <Image src={truckIcon} alt={"Caminhão"} width={"50px"} height={"50px"} />,
   VegetablesIcon: () => <Image src={vegetablesIcon} alt={"Vegetais"} width={"50px"} height={"50px"} />,

@@ -21,16 +21,11 @@ export const Hero: React.FC = () => (
         <Row middle={"xs"}>
           <Col xs={12} lg={6}>
             <DisplayStyled>
-              Sua salada.
-              <StrongWordBoxStyled>Agora barata e prática.</StrongWordBoxStyled>
+              Seja saudável
+              <StrongWordBoxStyled>sem sair de casa</StrongWordBoxStyled>
             </DisplayStyled>
             <Separator type={"line"} />
-            <Subheading>Você não deveria pagar caro para se alimentar de forma saudável.</Subheading>
-            <Separator type={"line"} />
-            <Subheading>
-              Nossa tecnologia torna nossas saladas mais baratas para você, além de chegarem frescas e saborosas na
-              porta da sua casa.
-            </Subheading>
+            <Subheading>Nossas saladas são entregues frescas e por um preço justo, na porta da sua casa ou no trabalho</Subheading>
             <Separator type={"subsection"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
@@ -63,17 +58,25 @@ export const Hero: React.FC = () => (
         </Row>
         <Separator type={"subsection"} />
         <Row center={"xs"}>
-          <Col xs={4}>
+          <Col xs={6} md={3}>
             <ImageObj.TruckIcon />
-            <Body>Você recebe suas saladas na porta de casa</Body>
+            <Body>Você recebe suas saladas na porta de casa ou no trabalho</Body>
+            <Separator type={'line'} />
           </Col>
-          <Col xs={4}>
+          <Col xs={6} md={3}>
             <ImageObj.CoinsIcon />
-            <Body>Nunca mais pague caro para se alimentar de forma saudável</Body>
+            <Body>Se alimente de forma saudável por um preço justo</Body>
+            <Separator type={'line'} />
           </Col>
-          <Col xs={4}>
+          <Col xs={6} md={3}>
+            <ImageObj.SaladIcon />
+            <Body>Economize comprando saladas para a semana toda. Elas duram.</Body>
+            <Separator type={'line'} />
+          </Col>
+          <Col xs={6} md={3}>
             <ImageObj.LettuceIcon />
-            <Body>As saladas são frescas e as folhas são plantadas perto de você</Body>
+            <Body>As saladas são frescas e os ingredientes de alta qualidade</Body>
+            <Separator type={'line'} />
           </Col>
         </Row>
       </HeroGridStyled>
