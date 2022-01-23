@@ -21,7 +21,7 @@ export const Hero: React.FC = () => (
         <Row middle={"xs"}>
           <Col xs={12} lg={6}>
             <DisplayStyled>
-              Seja saudável
+              Suas refeições saudáveis
               <StrongWordBoxStyled>sem sair de casa</StrongWordBoxStyled>
             </DisplayStyled>
             <Separator type={"line"} />
