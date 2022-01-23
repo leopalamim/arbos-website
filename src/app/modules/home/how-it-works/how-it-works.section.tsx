@@ -22,7 +22,7 @@ export const HowItWorksSection: React.FC = () => {
           <Col xs={12} lg={3}>
             <Hbox>
               <Hbox.Item hAlign={"center"}>
-                <ImageObj.Menu />
+                <ImageObj.Bowl />
               </Hbox.Item>
             </Hbox>
             <Separator type={"line"} />
@@ -46,7 +46,7 @@ export const HowItWorksSection: React.FC = () => {
           <Col xs={12} lg={3}>
             <Hbox>
               <Hbox.Item hAlign={"center"}>
-                <ImageObj.Truck />
+                <ImageObj.Menu />
               </Hbox.Item>
             </Hbox>
             <Separator type={"line"} />
@@ -57,20 +57,18 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Receba na porta da sua casa</H3>
+                  <H3>Defina o dia de entrega</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
-              <Body>
-                Acreditamos que você pode ser saudável sem sair de casa. Deixe que nós levamos!
-              </Body>
+              <Body>Seus pedidos são entregues em um dos dias disponíveis para você encaixar na sua rotina!</Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>
           <Col xs={12} lg={3}>
             <Hbox>
               <Hbox.Item hAlign={"center"}>
-                <ImageObj.Bowl />
+                <ImageObj.Truck />
               </Hbox.Item>
             </Hbox>
             <Separator type={"line"} />
@@ -81,11 +79,13 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Misture com nossos molhos</H3>
+                  <H3>Receba na porta da sua casa</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
-              <Body>Entregamos nossas saladas semi-prontas para consumir quando quiser. É só misturar e comer!</Body>
+              <Body>
+                Acreditamos que você pode ser saudável sem sair de casa. Deixe que nós levamos!
+              </Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>
