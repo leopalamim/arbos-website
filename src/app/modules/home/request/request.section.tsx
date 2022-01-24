@@ -15,8 +15,8 @@ export const RequestSection: React.FC = () => (
     </OnlyDesktop>
     <Row center ={'xs'}>
       <Col xs={12} lg={6}>
-        <H2>Faltam <Enhance>poucos dias</Enhance> para começarmos a entregar!</H2>
-        <Body>Ganhe <Enhance>10% de desconto</Enhance> em sua primeira compra ao preencher seu email!</Body>
+        <H2>Estamos em nosso <Enhance>pré-lançamento</Enhance>!</H2>
+        <Body>Faltam <Enhance>poucos dias</Enhance> para começarmos a entregar. Ganhe <Enhance>10% de desconto</Enhance> em sua primeira compra ao preencher seu email!</Body>
         <Separator type={"subsection"} />
         <RequestForm />
       </Col>

@@ -38,7 +38,7 @@ export const HowItWorksSection: React.FC = () => {
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Nosso cardápio conta com saladas de dar água na boca para ter saúde com gosto!
+                Nosso cardápio conta com saladas de dar água na boca!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
@@ -61,7 +61,7 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
-              <Body>Nossa entrega programada é flexível e encaixa na sua rotina, sem atrasos!</Body>
+              <Body>Nossa entrega programada encaixa na sua rotina, sem atrasos!</Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>
@@ -108,7 +108,7 @@ export const HowItWorksSection: React.FC = () => {
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Pegue sua refeição, misture-a como quiser e coma com sabor!
+                Entregamos os ingredientes para você misturar como quiser!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
