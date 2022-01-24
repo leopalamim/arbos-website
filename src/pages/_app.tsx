@@ -54,6 +54,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             "A Arbos é uma startup fundada por ex-alunos da USP apaixonados por alimentação, saúde e tecnologia. Sua missão é melhorar a qualidade de vida das pessoas, fornecendo alimentos saudáveis, frescos e baratos."
           }
         ></meta>
+        <meta name="facebook-domain-verification" content="gzipucrs7q08idtcsd20jjqlicw6oo" />
         <link rel={"icon"} type={"image/png"} sizes={"32x32"} href={"/favicon-32x32.png"} />
         <link rel={"icon"} type={"image/png"} sizes={"16x16"} href={"/favicon-16x16.png"} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
