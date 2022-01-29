@@ -29,9 +29,7 @@ export const Hero: React.FC = () => (
             <Separator type={"subsection"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
-                <Link to={"requestSection"} smooth>
-                  <Button kind={"callToAction"}>Quero ser saudável</Button>
-                </Link>
+                <Button kind={"callToAction"} href={"https://wa.me/5511934622206?text=Olá!%20Quero%20realizar%20uma%20compra."}>Experimente agora!</Button>
               </Hbox.Item>
               <Hbox.Separator />
               <Hbox.Item noGrow={true} hAlign={"flex-start"} vAlign={"center"}>
@@ -41,7 +39,7 @@ export const Hero: React.FC = () => (
               <Hbox.Item noGrow={true} hAlign={"flex-start"} vAlign={"center"}>
                 <Link to={"howItWorksSection"} smooth>
                   <Button kind={"primary"} variant={"link"}>
-                    quero saber mais
+                    saiba mais
                   </Button>
                 </Link>
               </Hbox.Item>
@@ -61,22 +59,22 @@ export const Hero: React.FC = () => (
           <Col xs={6} md={3}>
             <ImageObj.TruckIcon />
             <Body>Você recebe suas saladas na porta de casa ou no trabalho</Body>
-            <Separator type={'line'} />
+            <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.CoinsIcon />
             <Body>Se alimente de forma saudável por um preço justo</Body>
-            <Separator type={'line'} />
+            <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.SaladIcon />
             <Body>Economize comprando saladas para a semana toda. Elas duram.</Body>
-            <Separator type={'line'} />
+            <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.LettuceIcon />
             <Body>As saladas são frescas e os ingredientes de alta qualidade</Body>
-            <Separator type={'line'} />
+            <Separator type={"line"} />
           </Col>
         </Row>
       </HeroGridStyled>
