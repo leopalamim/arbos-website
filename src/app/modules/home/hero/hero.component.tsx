@@ -25,7 +25,7 @@ export const Hero: React.FC = () => (
               <StrongWordBoxStyled>sem sair de casa</StrongWordBoxStyled>
             </DisplayStyled>
             <Separator type={"line"} />
-            <Subheading>Nossas saladas são entregues frescas e por um preço justo, na sua casa ou trabalho</Subheading>
+            <Subheading>Nossas folhas são entregues frescas e por um preço justo, na sua casa ou trabalho</Subheading>
             <Separator type={"subsection"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => (
         <Row center={"xs"}>
           <Col xs={6} md={3}>
             <ImageObj.TruckIcon />
-            <Body>Você recebe suas saladas na porta de casa ou no trabalho</Body>
+            <Body>Você recebe seus vegetais na porta de casa ou no trabalho</Body>
             <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
@@ -68,12 +68,12 @@ export const Hero: React.FC = () => (
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.SaladIcon />
-            <Body>Economize comprando saladas para a semana toda. Elas duram.</Body>
+            <Body>Economize comprando mixes para a semana toda</Body>
             <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.LettuceIcon />
-            <Body>As saladas são frescas e os ingredientes de alta qualidade</Body>
+            <Body>Nossas folhas são frescas e de alta qualidade</Body>
             <Separator type={"line"} />
           </Col>
         </Row>
