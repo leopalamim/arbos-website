@@ -3,7 +3,7 @@ export const faq = [
     id: 1,
     question: "Como funciona a Arbos?",
     answer:
-      "É bem simples. Você monta seu pack de saladas, escolhe quando quer receber e finaliza sua compra. Você receberá seu pack na sua casa ou no trabalho com praticidade e economia.",
+      "É bem simples. Você monta seu pack de vegetais, escolhe quando quer receber e finaliza sua compra. Você receberá seu pack na sua casa ou no trabalho com praticidade e economia.",
   },
   {
     id: 2,
@@ -13,9 +13,9 @@ export const faq = [
   },
   {
     id: 3,
-    question: "Como as saladas são mais frescas?",
+    question: "Como as folhas são mais frescas?",
     answer:
-      "Os ingredientes saem dos produtores e chegam em nosso centro de distribuição nos dias de entrega. As saladas são separadas antes de sair para sua casa.",
+      "Os ingredientes saem dos produtores e chegam em nosso centro de distribuição nos dias de entrega. Os mixes são separadas antes de sair para a sua casa.",
   },
   {
     id: 4,

@@ -33,12 +33,12 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Escolha suas saladas preferidas</H3>
+                  <H3>Escolha suas folhas preferidas</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Nosso cardápio conta com saladas de dar água na boca!
+                Nosso cardápio conta com mixes de folhas de dar água na boca!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
@@ -103,12 +103,12 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Misture sua salada e aproveite</H3>
+                  <H3>Coma sua salada como quiser</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Entregamos os ingredientes para você misturar como quiser!
+                Entregamos nossos mixes para você preparar como quiser!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
