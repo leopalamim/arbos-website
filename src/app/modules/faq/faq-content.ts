@@ -15,7 +15,7 @@ export const faq = [
     id: 3,
     question: "Como as folhas são mais frescas?",
     answer:
-      "Os ingredientes saem dos produtores e chegam em nosso centro de distribuição nos dias de entrega. Os mixes são separadas antes de sair para a sua casa.",
+      "Os ingredientes saem dos produtores e chegam em nosso centro de distribuição nos dias de entrega. Os vegetais são separados antes de sair para a sua casa.",
   },
   {
     id: 4,
