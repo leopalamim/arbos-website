@@ -38,7 +38,7 @@ export const HowItWorksSection: React.FC = () => {
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Nosso cardápio conta com mixes de folhas de dar água na boca!
+                Nosso cardápio conta com folhas de dar água na boca!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
@@ -108,7 +108,7 @@ export const HowItWorksSection: React.FC = () => {
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Entregamos nossos mixes para você preparar como quiser!
+                Entregamos nossos packs para você preparar como quiser!
               </Body>
             </CardFrame>
             <Separator type={"line"} />

@@ -68,7 +68,7 @@ export const Hero: React.FC = () => (
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.SaladIcon />
-            <Body>Economize comprando mixes para a semana toda</Body>
+            <Body>Economize comprando packs para a semana toda</Body>
             <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
