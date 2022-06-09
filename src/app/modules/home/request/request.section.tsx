@@ -15,7 +15,7 @@ export const RequestSection: React.FC = () => (
         <H2>Ganhe <Enhance>30% de desconto</Enhance> em sua primeira compra!</H2>
         <Body>Tá esperando o que pra ser <Enhance>saudável</Enhance>?</Body>
         <Separator type={"subsection"} />
-        <Button kind={"callToAction"} href={"https://wa.me/5511934622206?text=Olá!%20Quero%20realizar%20uma%20compra."}>Experimente agora!</Button>
+        <Button kind={"callToAction"} href={"https://wa.me/5511983101691?text=Olá!%20Quero%20realizar%20uma%20compra."}>Experimente agora!</Button>
       </Col>
     </Row>
     <Separator type={"section"} />
