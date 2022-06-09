@@ -29,7 +29,7 @@ export const Hero: React.FC = () => (
             <Separator type={"subsection"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
-                <Button kind={"callToAction"} href={"https://wa.me/5511934622206?text=Olá!%20Quero%20realizar%20uma%20compra."}>Experimente agora!</Button>
+                <Button kind={"callToAction"} href={"https://wa.me/5511983101691?text=Olá!%20Quero%20realizar%20uma%20compra."}>Experimente agora!</Button>
               </Hbox.Item>
               <Hbox.Separator />
               <Hbox.Item noGrow={true} hAlign={"flex-start"} vAlign={"center"}>
