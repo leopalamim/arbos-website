@@ -26,6 +26,7 @@ import logoArbos from "@assets/img/img-logo.png";
 import menu from "@assets/img/img-menu.png";
 import muda from "@assets/img/img-muda.png";
 import salad from "@assets/img/img-salad.png";
+import store from "@assets/img/img-store.svg";
 import truck from "@assets/img/img-truck.png";
 
 export const ImageObj = {
@@ -52,5 +53,6 @@ export const ImageObj = {
   LogoArbos: () => <Image src={logoArbos} alt={"Logo da Arbos"} width={"70px"} height={"70px"} />,
   Menu: () => <Image src={menu} alt={"Cardápio"} width={"200px"} height={"200px"} />,
   Salad: () => <Image src={salad} alt={"Salada"} width={"500px"} height={"500px"} />,
+  Store: () => <Image src={store} alt={"Loja"} width={"500px"} height={"500px"} />,
   Truck: () => <Image src={truck} alt={"Caminhão"} width={"200px"} height={"200px"} />,
 };

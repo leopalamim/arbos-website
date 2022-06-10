@@ -17,14 +17,14 @@ export const DisplayStyled = styled.h1`
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.XXLarge};
   line-height: ${LineHeight.XLarge};
-  font-weight: ${FontWeight.Regular};
+  font-weight: ${FontWeight.Bold};
   color: ${Color.Black};
 `
 
 export const Subheading = styled.p`
   font-family: ${FontFamily.Secondary};
-  font-size: ${FontSize.Medium};
-  font-weight: ${FontWeight.Regular};
+  font-size: ${FontSize.Small};
+  font-weight: ${FontWeight.Lighter};
   line-height: ${LineHeight.Medium};
   color: ${Color.GrayDark};
 `
@@ -38,7 +38,7 @@ display: -webkit-box;
 -webkit-box-orient: vertical;`
 
 export const TitleLink = styled.a`
-  font-size: ${FontSize.Medium};
+  font-size: ${FontSize.Small};
   line-height: ${LineHeight.Medium};
   font-weight: ${FontWeight.Medium};
 
@@ -98,8 +98,8 @@ interface BodyProps {
 
 export const Body = styled.p<BodyProps>`
   font-family: ${FontFamily.Secondary};
-  font-size: ${FontSize.Small};
-  font-weight: ${FontWeight.Regular};
+  font-size: ${FontSize.XSmall};
+  font-weight: ${FontWeight.Lighter};
   line-height: ${LineHeight.Medium};
   color: ${Color.GrayDark};
 `

@@ -19,7 +19,7 @@ export const HowItWorksSection: React.FC = () => {
         </Row>
         <Separator type={"subsection"} />
         <Row>
-          <Col xs={12} lg={3}>
+          <Col xs={12} lg={4}>
             <Hbox>
               <Hbox.Item hAlign={"center"}>
                 <ImageObj.Bowl />
@@ -33,17 +33,17 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Escolha suas folhas preferidas</H3>
+                  <H3>Escolha os packs que quer vender</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Nosso cardápio conta com folhas de dar água na boca!
+                Nosso catálogo conta com packs de dar água na boca!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>
-          <Col xs={12} lg={3}>
+          <Col xs={12} lg={4}>
             <Hbox>
               <Hbox.Item hAlign={"center"}>
                 <ImageObj.Menu />
@@ -57,15 +57,15 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Defina o dia de entrega</H3>
+                  <H3>Defina os dias de recebimento</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
-              <Body>Nossa entrega programada encaixa na sua rotina, sem atrasos!</Body>
+              <Body>Receba nossos packs nos dias da semana que forem melhores para você!</Body>
             </CardFrame>
             <Separator type={"line"} />
           </Col>
-          <Col xs={12} lg={3}>
+          <Col xs={12} lg={4}>
             <Hbox>
               <Hbox.Item hAlign={"center"}>
                 <ImageObj.Truck />
@@ -79,36 +79,12 @@ export const HowItWorksSection: React.FC = () => {
                 </Hbox.Item>
                 <Hbox.Separator />
                 <Hbox.Item vAlign={"center"}>
-                  <H3>Receba na porta da sua casa</H3>
+                  <H3>Receba na porta do seu comércio</H3>
                 </Hbox.Item>
               </Hbox>
               <Separator type={"line"} />
               <Body>
-                Você pode ser saudável sem sair de casa. Deixe que nós levamos!
-              </Body>
-            </CardFrame>
-            <Separator type={"line"} />
-          </Col>
-          <Col xs={12} lg={3}>
-            <Hbox>
-              <Hbox.Item hAlign={"center"}>
-                <ImageObj.Eat />
-              </Hbox.Item>
-            </Hbox>
-            <Separator type={"line"} />
-            <CardFrame hoverEffect={true} paddingType={"large"}>
-              <Hbox>
-                <Hbox.Item noGrow={true} vAlign={"center"}>
-                  <Stats>4</Stats>
-                </Hbox.Item>
-                <Hbox.Separator />
-                <Hbox.Item vAlign={"center"}>
-                  <H3>Coma sua salada como quiser</H3>
-                </Hbox.Item>
-              </Hbox>
-              <Separator type={"line"} />
-              <Body>
-                Entregamos nossos packs para você preparar como quiser!
+                Você pode vender saúde sem sair da sua loja. Deixe que nós levamos!
               </Body>
             </CardFrame>
             <Separator type={"line"} />
