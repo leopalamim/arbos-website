@@ -1,9 +1,12 @@
-import { DisplayStyled, Body, Subheading } from "atomic/atm.typography/typography";
+import {
+  DisplayStyled,
+  Body,
+  Subheading,
+  Enhance,
+} from "atomic/atm.typography/typography";
 import {
   HeroGridStyled,
   HeroStyled,
-  HeroWave,
-  HeroWaveWrapper,
   StrongWordBoxStyled,
 } from "app/modules/home/hero/hero.component.style";
 import { Separator } from "@atomic/atm.separator";
@@ -21,15 +24,24 @@ export const Hero: React.FC = () => (
         <Row middle={"xs"}>
           <Col xs={12} lg={6}>
             <DisplayStyled>
-              Suas refeições saudáveis
-              <StrongWordBoxStyled>sem sair de casa</StrongWordBoxStyled>
+              Entregue <Enhance>saúde</Enhance> a seus clientes 🥬
             </DisplayStyled>
             <Separator type={"line"} />
-            <Subheading>Nossas folhas são entregues frescas e por um preço justo, na sua casa ou trabalho</Subheading>
+            <Subheading>
+              Tenha na sua loja saladas frescas, prontas para consumo e sem
+              agrotóxicos
+            </Subheading>
             <Separator type={"subsection"} />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign={"center"}>
-                <Button kind={"callToAction"} href={"https://wa.me/5511983101691?text=Olá!%20Quero%20realizar%20uma%20compra."}>Experimente agora!</Button>
+                <Button
+                  kind={"callToAction"}
+                  href={
+                    "https://wa.me/5511983101691?text=Olá!%20Quero%20realizar%20uma%20compra."
+                  }
+                >
+                  Quero fazer um pedido!
+                </Button>
               </Hbox.Item>
               <Hbox.Separator />
               <Hbox.Item noGrow={true} hAlign={"flex-start"} vAlign={"center"}>
@@ -49,7 +61,7 @@ export const Hero: React.FC = () => (
           <Col xs={12} lg={6}>
             <Hbox>
               <Hbox.Item hAlign={"center"}>
-                <ImageObj.Salad />
+                <ImageObj.Store />
               </Hbox.Item>
             </Hbox>
           </Col>
@@ -58,31 +70,23 @@ export const Hero: React.FC = () => (
         <Row center={"xs"}>
           <Col xs={6} md={3}>
             <ImageObj.TruckIcon />
-            <Body>Você recebe seus vegetais na porta de casa ou no trabalho</Body>
-            <Separator type={"line"} />
-          </Col>
-          <Col xs={6} md={3}>
-            <ImageObj.CoinsIcon />
-            <Body>Se alimente de forma saudável por um preço justo</Body>
+            <Body>
+              Você recebe nossos vegetais na sua loja
+            </Body>
             <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.SaladIcon />
-            <Body>Economize comprando packs para a semana toda</Body>
+            <Body>Seus clientes se alimentam de forma saudável</Body>
             <Separator type={"line"} />
           </Col>
           <Col xs={6} md={3}>
             <ImageObj.LettuceIcon />
-            <Body>Nossas folhas são frescas e de alta qualidade</Body>
+            <Body>Nós entregramos saladas frescas e de alta qualidade</Body>
             <Separator type={"line"} />
           </Col>
         </Row>
       </HeroGridStyled>
     </HeroStyled>
-    <OnlyDesktop>
-      <HeroWaveWrapper>
-        <HeroWave />
-      </HeroWaveWrapper>
-    </OnlyDesktop>
   </>
 );

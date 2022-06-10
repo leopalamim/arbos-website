@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
                   </Hbox.Item>
                   <Hbox.Separator />
                   <Hbox.Item>
-                    <BodySecondary>Av. Doutor Arnaldo, 2194 - Sumaré, São Paulo - SP, 01255-000</BodySecondary>
+                    <BodySecondary>Rua Apinajés, 1360, Casa A - Perdizes, São Paulo - SP, 01258-000</BodySecondary>
                   </Hbox.Item>
                 </Hbox>
                 <Separator />

@@ -42,7 +42,7 @@ const buttonColor: Record<ButtonKind, { textColor: string; shapeColor: string }>
 export const ButtonWrapperStyled = styled.button<ButtonWrapperStyledProps>`
   position: relative;
   font-weight: ${FontWeight.Medium};
-  font-size: ${FontSize.Small};
+  font-size: ${FontSize.XSmall};
   background-color: ${(props: ButtonWrapperStyledProps) => buttonColor[props.kind].shapeColor};
   color: ${(props: ButtonWrapperStyledProps) => buttonColor[props.kind].textColor};
   border-radius: ${Border.Radius};
@@ -78,6 +78,7 @@ export const ButtonWrapperStyled = styled.button<ButtonWrapperStyledProps>`
           background-color: transparent;
           color: ${buttonColor[props.kind].shapeColor};
           text-align: left;
+          text-decoration: underline;
         `
     }
   }}

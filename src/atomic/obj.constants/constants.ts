@@ -2,14 +2,14 @@ export enum BrandColor {
   Green = "#578959",
   LightGreen = "#A1C4AA",
   DarkGreen = "#184047",
-  Red = "#DC143C",
+  LighterGreen = "#53C351",
 }
 
 export class Color {
   public static readonly Primary = BrandColor.Green;
   public static readonly Secondary = BrandColor.LightGreen;
   public static readonly Tertiary = BrandColor.DarkGreen;
-  public static readonly CallToAction = BrandColor.Red;
+  public static readonly CallToAction = BrandColor.LighterGreen;
 
   public static readonly Black = "#052117";
   public static readonly White = "#FFFFFF";
@@ -23,6 +23,8 @@ export class Color {
   public static readonly Gray = "#BDBDBD";
   public static readonly GrayLight = "#F1F1F1";
   public static readonly GrayXLight = "#F9F9F9";
+
+  public static readonly LightBlue = "#E5F0EE";
 
   public static readonly Background = "#FFFDFB";
   public static readonly DarkBackground = "#1A202C";
@@ -56,14 +58,14 @@ export enum ProportionalSpacing {
 }
 
 export enum FontFamily {
-  Primary = "Playfair Display",
-  Secondary = "Crimson Pro",
-  Subheading = "Inria Serif"
+  Primary = "Montserrat",
+  Secondary = "Work Sans",
+  Subheading = "Work Sans"
 }
 
 export enum FontWeight {
   Medium = 600,
-  Bold = "bold",
+  Bold = 900,
   Regular = "Regular",
   Lighter = 300,
 }
